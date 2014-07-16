@@ -16,7 +16,21 @@ class BusinessController extends CController{
 	}
 	public function actionAdd(){
 		if(Yii::app()->request->isPostRequest){
-			CV::showmsg('授权系统正在完善中，请稍后访问',Yii::app()->createUrl('site/index'));
+			$url = Yii::app()->request->getParam('url',null);
+			if(null == $url){
+				CV::showmsg('域名不能为空',Yii::app()->createUrl('business/add'));
+			}
+			$model = new Authorizer();
+			$model->username = Yii::app()->user->name;
+			$model->uid = Yii::app()->user->id;
+			$model->url = $url;
+			$model->version = '1.0';
+			$model->type = 1;
+			$model->dateline = time();
+			if($model->save()){
+				CV::showmsg('增加新域名授权成功',Yii::app()->createUrl('business/center'));
+			}
+			CV::showmsg('域名授权未成功，请联系官方',Yii::app()->createUrl('business/center'));
 		}
 		$this->render('add');
 	}
