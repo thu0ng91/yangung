@@ -1,0 +1,30 @@
+<?php
+class BeforeRequestBehavior extends CBehavior{
+    public function events(){
+        return  array(  
+               'onBeginRequest'=>'getConf',
+        );  
+    }
+    public function getConf(){
+        $systemData = Setting::model()->findAll();
+        if(null === $systemData){
+            return;
+        }
+
+        foreach($systemData as $value){
+            $countArr = json_decode($value->svalue,true) ? json_decode($value->svalue,true) : $value->svalue;
+
+            if(isset($countArr) && !is_array($countArr)){
+                $arr[$value->skey]=$countArr;
+            }else{
+                $newArr = array();
+                foreach($countArr as $key=>$val){
+                    $newArr[$key] = trim($val);
+                }
+                $arr = array($value->skey => $newArr);
+            }
+            Yii::app()->setParams($arr);
+            unset($arr);
+        }
+    }
+}
