@@ -19,6 +19,14 @@ class BusinessController extends CController{
 			if(null == $url){
 				CV::showmsg('域名不能为空',Yii::app()->createUrl('business/add'));
 			}
+			$result = Authorizer::model()->findByAttributes(array('url'=>$url));
+			if(null != $result){
+				CV::showmsg('该域名已经授权',Yii::app()->createUrl('business/add'));
+			}
+			$nums = Authorizer::model()->countByAttributes(array('uid'=>Yii::app()->user->id));
+			if($nums > 3){
+				CV::showmsg('域名授权已经达到上限，请联系管理员',Yii::app()->createUrl('business/add'));
+			}
 			$model = new Authorizer();
 			$model->username = Yii::app()->user->name;
 			$model->uid = Yii::app()->user->id;
@@ -51,7 +59,7 @@ class BusinessController extends CController{
 	    $data .= $_SERVER['REMOTE_PORT'];
 	    
 	    $hash = md5('yacms123321'.md5($data));
-	    var_dump($hash);exit;
+
 	    return $hash;
 	}
 }
