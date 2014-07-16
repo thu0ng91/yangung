@@ -15,6 +15,9 @@ class BusinessController extends CController{
 		$this->render('index');
 	}
 	public function actionAdd(){
+		if(Yii::app()->request->isPostRequest){
+			CV::showmsg('授权系统正在完善中，请稍后访问',Yii::app()->createUrl('site/index'));
+		}
 		$this->render('add');
 	}
 }
