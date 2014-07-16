@@ -19,15 +19,15 @@
 <div id="member_basic">
 <div class="main_deng">
    <div class="login_top">增加域名授权</div>
-   <form action="<?php echo Yii::app()->createUrl('business/index');?>" method="post" style="padding:10px;">
+   <form action="<?php echo Yii::app()->createUrl('business/add');?>" method="post" style="padding:10px;">
 		<label>
-			<span><font color="#FF0000">*</font>新加域名:</span>
+			<span><font color="#FF0000">*</font>新域名:</span>
 			<input name="url" type="text" value="" class='input_text'>
 		</label>
 		<div class="member_login_submit">
 			<?php echo CHtml::submitButton('提交'); ?>
 		</div>
-		
+		<p>请注意您可以增加的域名总数，谨慎添加</p>
    </form>
 </div>
         </div>

@@ -20,4 +20,10 @@ class BusinessController extends CController{
 		}
 		$this->render('add');
 	}
+	public function actionDownload(){
+		echo 'download';
+	}
+	public function actionComment(){
+		echo 'comment';
+	}
 }

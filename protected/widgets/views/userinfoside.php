@@ -3,8 +3,8 @@
 	<dl class='membernavlist'>
 		<dt><a href='<?php echo Yii::app()->createUrl('business/center');?>'>我的授权</a></dt>
 		<dt><a href='<?php echo Yii::app()->createUrl('business/add');?>'>增加授权</a></dt>
-		<dt ><a href='<?php echo Yii::app()->createUrl('member/bookcase');?>' rel='nofollow'>下载版本</a></dt>
-		<dt ><a href='<?php echo Yii::app()->createUrl('member/mycomment');?>' rel='nofollow'>有问必答</a></dt>		
+		<dt ><a href='<?php echo Yii::app()->createUrl('business/download');?>' rel='nofollow'>下载版本</a></dt>
+		<dt ><a href='<?php echo Yii::app()->createUrl('business/comment');?>' rel='nofollow'>有问必答</a></dt>		
 	</dl>
 	<div class="clear"></div>
 </div>
