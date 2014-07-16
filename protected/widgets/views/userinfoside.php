@@ -1,8 +1,8 @@
 <h3 class='title'><span>功能中心</span></h3>
 <div class="active" id="sidebar" data-csnow="221" data-class3="0" data-jsok="">
 	<dl class='membernavlist'>
-		<dt><a href='<?php echo Yii::app()->createUrl('member/share');?>'>我的授权</a></dt>
-		<dt><a href='<?php echo Yii::app()->createUrl('member/myshare');?>'>增加授权</a></dt>
+		<dt><a href='<?php echo Yii::app()->createUrl('business/center');?>'>我的授权</a></dt>
+		<dt><a href='<?php echo Yii::app()->createUrl('business/add');?>'>增加授权</a></dt>
 		<dt ><a href='<?php echo Yii::app()->createUrl('member/bookcase');?>' rel='nofollow'>下载版本</a></dt>
 		<dt ><a href='<?php echo Yii::app()->createUrl('member/mycomment');?>' rel='nofollow'>有问必答</a></dt>		
 	</dl>
