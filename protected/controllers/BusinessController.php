@@ -9,10 +9,9 @@ class BusinessController extends CController{
 		return true;
 	}
 	public function actionCenter(){
-		if(isset($_POST['submit'])){
-			CV::showmsg('授权系统正在完善中，请稍后访问','/yunyue');
-		}
-		$this->render('index');
+		$your = Authorizer::model()->findAllByAttributes(array('uid'=>Yii::app()->user->id));
+		
+		$this->render('index',array('your'=>$your));
 	}
 	public function actionAdd(){
 		if(Yii::app()->request->isPostRequest){
@@ -27,6 +26,7 @@ class BusinessController extends CController{
 			$model->version = '1.0';
 			$model->type = 1;
 			$model->dateline = time();
+			$model->sqm = $this->create_sqm($url);
 			if($model->save()){
 				CV::showmsg('增加新域名授权成功',Yii::app()->createUrl('business/center'));
 			}
@@ -39,5 +39,20 @@ class BusinessController extends CController{
 	}
 	public function actionComment(){
 		echo 'comment';
+	}
+	public function create_sqm($url) {
+	    
+	    $data = $url;
+	    $data .= $_SERVER['REQUEST_TIME'];
+	    $data .= $_SERVER['HTTP_USER_AGENT'];
+	    $data .= $_SERVER['LOCAL_ADDR'];
+	    $data .= $_SERVER['LOCAL_PORT'];
+	    $data .= $_SERVER['REMOTE_ADDR'];
+	    $data .= $_SERVER['REMOTE_PORT'];
+	    
+	    $hash = strtoupper(hash('yacms123321', $uid . $guid . md5($data)));
+	    $sqm = substr($hash, 0, 8). substr($hash, 8, 4). substr($hash, 12, 4). substr($hash, 16, 4). substr($hash, 20, 12);
+	    
+	    return $sqm;
 	}
 }

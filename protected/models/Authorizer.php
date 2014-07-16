@@ -44,11 +44,11 @@ class Authorizer extends CActiveRecord
 			array('type', 'numerical', 'integerOnly'=>true),
 			array('username, version', 'length', 'max'=>25),
 			array('uid', 'length', 'max'=>8),
-			array('url', 'length', 'max'=>255),
+			array('url,sqm', 'length', 'max'=>255),
 			array('dateline', 'length', 'max'=>11),
 			// The following rule is used by search().
 			// Please remove those attributes that should not be searched.
-			array('id, username, uid, url, version, type, dateline', 'safe', 'on'=>'search'),
+			array('id, username, uid, url, version, type, dateline,sqm', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -76,6 +76,7 @@ class Authorizer extends CActiveRecord
 			'version' => 'Version',
 			'type' => 'Type',
 			'dateline' => 'Dateline',
+			'sqm' => 'Sqm',
 		);
 	}
 
@@ -97,6 +98,7 @@ class Authorizer extends CActiveRecord
 		$criteria->compare('version',$this->version,true);
 		$criteria->compare('type',$this->type);
 		$criteria->compare('dateline',$this->dateline,true);
+		$criteria->compare('sqm',$this->sqm,true);
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,
