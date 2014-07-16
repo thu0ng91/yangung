@@ -50,7 +50,7 @@ class BusinessController extends CController{
 	    $data .= $_SERVER['REMOTE_ADDR'];
 	    $data .= $_SERVER['REMOTE_PORT'];
 	    
-	    $hash = strtoupper(hash('yacms123321', $uid . $guid . md5($data)));
+	    $hash = strtoupper(hash('yacms123321', md5($data)));
 	    $sqm = substr($hash, 0, 8). substr($hash, 8, 4). substr($hash, 12, 4). substr($hash, 16, 4). substr($hash, 20, 12);
 	    
 	    return $sqm;
