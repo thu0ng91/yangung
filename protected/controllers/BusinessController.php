@@ -52,7 +52,7 @@ class BusinessController extends CController{
 	    
 	    $hash = strtoupper(hash('yacms123321', md5($data)));
 	    $sqm = substr($hash, 0, 8). substr($hash, 8, 4). substr($hash, 12, 4). substr($hash, 16, 4). substr($hash, 20, 12);
-	    
+	    var_dump($sqm);exit;
 	    return $sqm;
 	}
 }
