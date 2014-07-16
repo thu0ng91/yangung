@@ -24,7 +24,7 @@
 	echo Yii::app ()->createUrl ( 'member/userinfo' );
 	?>">会员中心</a></div>
 <span>域名授权查询</span></h3>
-<table border="1">
+<table style="border:1px #ccc solid;padding:10px;margin:10px 0;">
 	<tr>
 	<th style="width:10%">序号</th>
 	<th style="width:29%">域名</th>
@@ -32,7 +32,7 @@
 	<th style="width:30%">授权码</th>
 	</tr>
 	<?php $i=1; foreach($your as $v):?>
-	<tr>
+	<tr style="border-bottom:1px dashed #ccc;">
 		<td><?php echo $i++;?></td>
 		<td><?php echo $v->url;?></td>
 		<td><?php echo date('Y-m-d H:i:s',$v->dateline);?></td>
