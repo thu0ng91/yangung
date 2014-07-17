@@ -104,4 +104,22 @@ class Authorizer extends CActiveRecord
 			'criteria'=>$criteria,
 		));
 	}
+	
+	public static function getVersion($version){
+		switch ($version){
+			case 1:
+				$vname = '免费版';break;
+			case 2:
+				$vname = '基础版';break;
+			case 3:
+				$vname = '标准版';break;
+			case 4:
+				$vname = '高级版';break;
+			case 5:
+				$vname = '豪华版';break;
+			default:
+				$vname = '免费版';
+		}
+		return $vname;
+	}
 }
