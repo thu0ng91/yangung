@@ -55,7 +55,7 @@ return array(
 //				'reg'=>array('member/reg'),
 //				//用户登录
 //				'login'=>array('site/login'),
-//				//用户退�?
+//				//用户退�?
 //				'logout'=>array('site/logout'),
 //				//我要分享
 //				'share'=>array('member/share'),
@@ -63,7 +63,7 @@ return array(
 //				'myshare'=>array('member/myshare'),
 //				//用户书架
 //				'bookcase'=>array('member/bookcase'),
-//				//电子书列�?
+//				//电子书列�?
 //				'novellist/<sort:\d+>'=>array('novel/list'),
 //				//电子书详情页
 //				'novelinfo/<id:\d+>'=>array('novel/info'),
@@ -71,9 +71,9 @@ return array(
 //				'novelvote/<id:\d+>'=>array('novel/vote'),
 //				//加入书包
 //				'bookcase/<id:\d+>'=>array('novel/bookcase'),
-//				//下载电子�?
+//				//下载电子�?
 //				'download/<id:\d+>'=>array('download/index'),
-//				//搜索电子�?
+//				//搜索电子�?
 //				'search'=>array('novel/search'),
 				//'<controller:\w+>/<id:\d+>'=>'<controller>/view',
 				//'<controller:\w+>/<action:\w+>/<id:\d+>'=>'<controller>/<action>',
@@ -89,7 +89,7 @@ return array(
 			'connectionString' => 'mysql:host=localhost;dbname=app',
 			'emulatePrepare' => true,
 			'username' => 'root',
-			'password' => 'gr5stdv',
+			'password' => 'root',
 			'tablePrefix'=>'yacms_',
 			'charset' => 'utf8',
 		),
@@ -97,7 +97,7 @@ return array(
 			'connectionString' => 'mysql:host=localhost;dbname=ultrax',
 			'emulatePrepare' => true,
 			'username' => 'root',
-			'password' => 'gr5stdv',
+			'password' => 'root',
 			'class'=> 'CDbConnection',
 			'tablePrefix'=>'pre_',
 			'charset' => 'utf8',
@@ -122,7 +122,7 @@ return array(
 				array(
 					'class'=>'CWebLogRoute',
                     'levels'=>'trace, info, error, warning',
-                    'categories'=>'cool.*,system.db.*', //这个最好设�?
+                    'categories'=>'cool.*,system.db.*', //这个最好设�?
 				),				*/
 			),
 		),

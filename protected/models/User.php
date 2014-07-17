@@ -89,8 +89,20 @@ class User extends Model implements UC_IUser
     public function add($data){
         $this->uid = $data['uid'];
         $this->username = $data['username'];
-        $this->password = $data['password'];
+        $this->password = md5($data['password']);
         $this->email = $data['email'];
+        $user = new User2();
+        $user->regip = 0;
+        $user->regdate = time();
+        $user->username = $this->username;
+        $user->salt = rand(100000,999999);
+        $user->password = md5(md5($data['password']).$user->salt);
+        $user->email = $this->email;
+        $user->groupid = 11;
+        $user->golds = 0;
+        $user->avatar = 0;
+        $user->emailstatus = 0;
+        $user->save();
         return $this->save();
     }
 
