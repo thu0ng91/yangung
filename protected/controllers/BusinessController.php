@@ -24,7 +24,9 @@ class BusinessController extends CController{
 				CV::showmsg('该域名已经授权',Yii::app()->createUrl('business/add'));
 			}
 			$nums = Authorizer::model()->countByAttributes(array('uid'=>Yii::app()->user->id));
-			if($nums > 3){
+			$userinfo = User2::model()->findByAttributes(array('username'=>Yii::app()->user->name),array('select'=>'groupid'));
+			$usergroup = Group::model()->findByPk($userinfo->groupid);
+			if($nums > $usergroup->version_nums){
 				CV::showmsg('域名授权已经达到上限，请联系管理员',Yii::app()->createUrl('business/add'));
 			}
 			$model = new Authorizer();

@@ -52,9 +52,10 @@ class Group extends CActiveRecord
 			array('groupid', 'required'),
 			array('groupid, creditsfrom, creditsto, allowread, allowpost, allowreply, allowattach, allowdown, allowtop, allowdigest, allowupdate, allowdelete', 'numerical', 'integerOnly'=>true),
 			array('name', 'length', 'max'=>20),
+			array('version_nums', 'length', 'max'=>4),
 			// The following rule is used by search().
 			// Please remove those attributes that should not be searched.
-			array('groupid, name, creditsfrom, creditsto, allowread, allowpost, allowreply, allowattach, allowdown, allowtop, allowdigest, allowupdate, allowdelete', 'safe', 'on'=>'search'),
+			array('groupid, name,version_nums, creditsfrom, creditsto, allowread, allowpost, allowreply, allowattach, allowdown, allowtop, allowdigest, allowupdate, allowdelete', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -88,6 +89,7 @@ class Group extends CActiveRecord
 			'allowdigest' => '推荐权限',
 			'allowupdate' => '更新权限',
 			'allowdelete' => '删除权限',
+			'version_nums' => '允许授权域名数',
 		);
 	}
 
@@ -114,7 +116,8 @@ class Group extends CActiveRecord
 		$criteria->compare('allowtop',$this->allowtop);
 		$criteria->compare('allowdigest',$this->allowdigest);
 		$criteria->compare('allowupdate',$this->allowupdate);
-		$criteria->compare('allowdelete',$this->allowdelete);
+		$criteria->compare('allowdelete',$this->allowdelete);		
+		$criteria->compare('version_nums',$this->version_nums,true);
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,
