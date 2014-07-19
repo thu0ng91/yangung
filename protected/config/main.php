@@ -130,6 +130,15 @@ return array(
             'datetimeFormat'=>'Y-m-d H:i:s',
             'dateFormat'=>'Y-m-d',
         ),
+        'alipay'=>array(
+			'class'=>'application.extensions.alipay.Alipay',
+			'partner'=>'xxx', // your partner id
+			'key'=>'xxx', // your key
+			'seller_email'=>'xxx',// your email
+			'call_back_url'=>'http://xxx/order/backalipay',//同步回调地址
+			'notify_url'=>'http://xxx/order/notifyalipay', //异步通知地址，注意设置权限为Alipay可返回数据
+			'merchant_url'=>'http://xxx/order/', //支付完后自动跳回商户地址
+		),
 	),
     
 	// application-level parameters that can be accessed
