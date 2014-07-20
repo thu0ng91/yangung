@@ -22,7 +22,7 @@
    <form action="<?php echo Yii::app()->createUrl('business/add');?>" method="post" style="padding:10px;">
 		<label>
 			<span><font color="#FF0000">*</font>新域名:</span>
-			<input name="url" type="text" value="" class='input_text'>
+			<input name="url" type="text" value="" class='input_text'>*不需要http://
 		</label>
 		<div class="member_login_submit">
 			<?php echo CHtml::submitButton('提交'); ?>

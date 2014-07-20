@@ -19,6 +19,9 @@ class BusinessController extends CController{
 			if(null == $url){
 				CV::showmsg('域名不能为空',Yii::app()->createUrl('business/add'));
 			}
+			if (!preg_match('/^([A-Z0-9][A-Z0-9_-]*(?:\.[A-Z0-9][A-Z0-9_-]*)+):?(\d+)?\/?/i',$url)) {
+			    CV::showmsg('域名格式错误',Yii::app()->createUrl('business/add'));
+			}
 			$result = Authorizer::model()->findByAttributes(array('url'=>$url));
 			if(null != $result){
 				CV::showmsg('该域名已经授权',Yii::app()->createUrl('business/add'));
@@ -36,7 +39,7 @@ class BusinessController extends CController{
 			$model->version = '1.0';
 			$model->type = 1;
 			$model->dateline = time();
-			$model->sqm = $this->create_sqm($url);
+			$model->sqm = $this->create_sqm($url,$model->version);
 			if($model->save()){
 				CV::showmsg('增加新域名授权成功',Yii::app()->createUrl('business/center'));
 			}
@@ -50,18 +53,10 @@ class BusinessController extends CController{
 	public function actionComment(){
 		echo 'comment';
 	}
-	public function create_sqm($url) {
-	    
+	public function create_sqm($url,$version) {
 	    $data = $url;
-	    $data .= $_SERVER['REQUEST_TIME'];
-	    $data .= $_SERVER['HTTP_USER_AGENT'];
-	    $data .= $_SERVER['LOCAL_ADDR'];
-	    $data .= $_SERVER['LOCAL_PORT'];
-	    $data .= $_SERVER['REMOTE_ADDR'];
-	    $data .= $_SERVER['REMOTE_PORT'];
-	    
+	    $data .= $version;
 	    $hash = md5('yacms123321'.md5($data));
-
 	    return $hash;
 	}
 }
