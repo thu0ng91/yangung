@@ -1,6 +1,15 @@
 <div id="banner" class="updated-banner">
           <div class="wp">
-            <ul class="content">
+          选择下列方式，将有专人与您取得联系 <br>
+	售前咨询：<br>
+	<a href="tencent://message/?uin=5524812&amp;Site=云阅网络&amp;Menu=yes" target="blank" tiptitle="直接点击与我QQ交谈">5524812&nbsp;&nbsp;(点击交谈)</a><br>
+	<a href="tencent://message/?uin=81169969&amp;Site=云阅网络&amp;Menu=yes" target="blank" tiptitle="直接点击与我QQ交谈">81169969&nbsp;&nbsp;(点击交谈)</a><br>
+	Email: business@yunyuewang.com <br><br>
+	
+	汇款帐号信息： <br>
+ 	注：1.汇款金额最好加个零头，便于区别。如您的QQ号尾数为18，那您可以在汇款时多汇0.18元以示区别。<br>
+     	2.汇款后请与我们确认，通过QQ：<a href="tencent://message/?uin=5524812&amp;Site=云阅网络&amp;Menu=yes" target="blank" tiptitle="直接点击与我QQ交谈">5524812&nbsp;&nbsp;(点击交谈)</a> 在线联系<br>
+            <!-- ul class="content">
               <li class="ord-1">
                 <div class="name">Beta版不断
 <br />迭代更新                </div>
@@ -20,7 +29,7 @@
                 <div class="time">2013-01-07</div>
                 <div class="fold"></div>
               </li>
-            </ul>
+            </ul-->
           </div>
           <div class="ripple"></div>
         </div>
