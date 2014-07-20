@@ -26,12 +26,13 @@
 <span>域名授权查询</span></h3>
 <table style="border:1px #ccc solid;padding:10px;margin:10px 0;width:790px;">
 	<tr style="height:30px;line-height: 30px;border-bottom:1px #ccc solid;">
-	<th style="width:10%">序号</th>
+	<th style="width:6%">序号</th>
 	<th style="width:20%">域名</th>
-	<th style="width:20%">时间</th>
+	<th style="width:18%">时间</th>
 	<th style="width:9%">类型</th>
 	<th style="width:9%">版本</th>
 	<th style="width:30%">授权码</th>
+	<th style="width:6%">重新授权</th>
 	</tr>
 	<?php $i=1; foreach($your as $v):?>
 	<tr style="border-bottom:1px dashed #ccc;">
@@ -41,6 +42,7 @@
 		<td style="text-align:center;"><?php echo Authorizer::getVersion($v->version);?></td>
 		<td style="text-align:center;"><?php echo $v->version;?></td>
 		<td style="text-align:center;"><?php echo $v->sqm;?></td>
+		<td style="text-align:center;"><a href="<?php echo Yii::app()->createUrl('business/add',array('id'=>$v->id, 'reset'=>1));?>">重新授权</a></td>
 	</tr>
 	<?php endforeach;?>
 </table>

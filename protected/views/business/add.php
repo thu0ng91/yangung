@@ -24,16 +24,18 @@
 			<span><font color="#FF0000">*</font>版本:</span>
 			<select name="version" class='input_text'>
 				<?php foreach($version as $v):?>
-				<option value ="<?php echo $v->version_number;?>"><?php echo $v->title;?></option>
+				<option value ="<?php echo $v->version_number;?>" <?php if(isset($model->version) && $v->version_number == $model->version):?> SELECTED<?php endif;?>><?php echo $v->title;?></option>
 				<?php endforeach;?>
 			</select>
 		</label>
    		
 		<label>
 			<span><font color="#FF0000">*</font>新域名:</span>
-			<input name="url" type="text" value="" class='input_text'>
+			<input name="url" type="text" value="<?php if(isset($model->url)):?><?php echo $model->url;?><?php endif;?>" <?php if(isset($model->url)):?>readonly<?php endif;?> class='input_text'>
 		</label>
-		
+		<?php if(isset($model) && Yii::app()->user->id == $model->uid):?>
+		<input type="hidden" value="1" name="reset" />
+		<?php endif;?>
 		<div class="member_login_submit">
 			<?php echo CHtml::submitButton('提交'); ?>
 		</div>

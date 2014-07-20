@@ -15,8 +15,28 @@ class BusinessController extends CController{
 	}
 	public function actionAdd(){
 		$version = Version::model()->findAll();
+		$id = Yii::app()->request->getParam('id',null);
+		$model = null;
+		if(null != $id){
+			$model = Authorizer::model()->findByPk($id);
+			if(null == $model){
+				CV::showmsg('未知错误，请联系管理员',Yii::app()->createUrl('business/center'));
+			}
+		}
 		if(Yii::app()->request->isPostRequest){
 			$url = Yii::app()->request->getParam('url',null);
+			$reset = Yii::app()->request->getParam('reset',null);
+			if(null == $reset){
+				$model = Authorizer::model()->findByAttributes(array('url'=>$url,'uid'=>Yii::app()->user->id));
+				if(null == $model){
+					CV::showmsg('未知错误，请联系管理员',Yii::app()->createUrl('business/center'));
+				}
+				$model->version = addslashes($_POST['version']);
+				$model->sqm = $this->create_sqm($url,$model->version);
+				if($model->save()){
+					CV::showmsg('增加新域名授权成功',Yii::app()->createUrl('business/center'));
+				}
+			}
 			if(null == $url){
 				CV::showmsg('域名不能为空',Yii::app()->createUrl('business/add'));
 			}
@@ -54,7 +74,7 @@ class BusinessController extends CController{
 			}
 			CV::showmsg('域名授权未成功，请联系官方',Yii::app()->createUrl('business/center'));
 		}
-		$this->render('add',array('version'=>$version));
+		$this->render('add',array('version'=>$version,'model'=>$model));
 	}
 	public function actionDownload(){
 		echo 'download';
