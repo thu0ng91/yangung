@@ -77,7 +77,7 @@ class BusinessController extends CController{
 		$this->render('add',array('version'=>$version,'model'=>$model));
 	}
 	public function actionDownload(){
-		echo 'download';
+		$this->render('download');
 	}
 	public function actionComment(){
 		echo 'comment';
