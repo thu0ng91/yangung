@@ -28,7 +28,6 @@
 			  <option value="3">白金版</option>
 			  <option value="4">终极版</option>
 			</select>
-			<input name="url" type="text" value="" class='input_text'>
 		</label>
    		
 		<label>
