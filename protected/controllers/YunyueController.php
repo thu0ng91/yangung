@@ -2,7 +2,7 @@
 class YunyueController extends CController{
 	public function actionLog(){
 		$datalog = Version::model()->findAllByAttributes(array(),array('order'=>'posttime desc'));
-		$i=0;
+		$i=1;
 		foreach ($datalog as $v){
 			$i++;
 			if($i%2==0){
