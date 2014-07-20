@@ -7,7 +7,7 @@
 	echo Yii::app ()->request->baseUrl;
 	?>/css/yacms/css/index.css" />
 <style>
-submitinput {
+.submitinput {
 background: #fb8407 url(../images/min-login2.gif) repeat-x left;
 border: 1px solid #cf4500;
 height: 32px;
