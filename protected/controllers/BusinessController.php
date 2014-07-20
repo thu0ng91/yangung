@@ -32,16 +32,16 @@ class BusinessController extends CController{
 			$model->username = Yii::app()->user->name;
 			$model->uid = Yii::app()->user->id;
 			$model->url = $url;
-			$model->version = intval($_POST['version']);
-			
+			$model->version = addslashes($_POST['version']);
+			$versionsys = Version::model()->findByAttributes(array('version_number'=>$model->version));
 			$nums = Authorizer::model()->countByAttributes(array('uid'=>Yii::app()->user->id,'type'=>2));
 			$userinfo = User2::model()->findByAttributes(array('username'=>Yii::app()->user->name),array('select'=>'groupid'));
 			$usergroup = Group::model()->findByPk($userinfo->groupid);
 
-			if($model->version != 1 && $nums >= $usergroup->version_nums){
+			if($versionsys->price != 0 && $nums >= $usergroup->version_nums){
 				CV::showmsg('域名授权已经达到上限，请联系管理员',Yii::app()->createUrl('business/add'));
 			}
-			if($model->version == 1){
+			if($versionsys->price == 0){
 				$model->type = 1;
 			}else{
 				$model->type = 2;
