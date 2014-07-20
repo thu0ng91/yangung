@@ -1,5 +1,5 @@
 <div id="banner" class="updated-banner">
-          <div class="wp">
+          <div class="wp" style="color: #fff;padding:10px;">
           选择下列方式，将有专人与您取得联系 <br>
 	售前咨询：<br>
 	<a href="tencent://message/?uin=5524812&amp;Site=云阅网络&amp;Menu=yes" target="blank" tiptitle="直接点击与我QQ交谈">5524812&nbsp;&nbsp;(点击交谈)</a><br>
