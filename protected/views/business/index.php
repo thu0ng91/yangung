@@ -38,7 +38,7 @@
 		<td style="text-align:center;"><?php echo $i++;?></td>
 		<td style="text-align:center;"><?php echo $v->url;?></td>
 		<td style="text-align:center;"><?php echo date('Y-m-d H:i:s',$v->dateline);?></td>
-		<td style="text-align:center;"><?php echo Authorizer::getVersion($v->type);?></td>
+		<td style="text-align:center;"><?php echo Authorizer::getVersion($v->version);?></td>
 		<td style="text-align:center;"><?php echo $v->version;?></td>
 		<td style="text-align:center;"><?php echo $v->sqm;?></td>
 	</tr>
