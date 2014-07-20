@@ -6,6 +6,20 @@
 	href="<?php
 	echo Yii::app ()->request->baseUrl;
 	?>/css/yacms/css/index.css" />
+<style>
+submitinput {
+background: #fb8407 url(../images/min-login2.gif) repeat-x left;
+border: 1px solid #cf4500;
+height: 32px;
+line-height: 32px;
+padding: 0px 5px;
+border-radius: 5px;
+color: #fff;
+cursor: pointer;
+font-size: 14px;
+font-weight: bold;
+}
+</style>
 <div class="sidebar inner">
 
 <div class="sb_nav">
@@ -42,7 +56,7 @@
 		<td style="text-align:center;"><?php echo Authorizer::getVersion($v->version);?></td>
 		<td style="text-align:center;"><?php echo $v->version;?></td>
 		<td style="text-align:center;"><?php echo $v->sqm;?></td>
-		<td style="text-align:center;"><a href="<?php echo Yii::app()->createUrl('business/add',array('id'=>$v->id, 'reset'=>1));?>">重新授权</a></td>
+		<td style="text-align:center;"><a href="<?php echo Yii::app()->createUrl('business/add',array('id'=>$v->id, 'reset'=>1));?>" class="submitinput">重新授权</a></td>
 	</tr>
 	<?php endforeach;?>
 </table>
