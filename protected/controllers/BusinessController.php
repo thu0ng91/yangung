@@ -37,7 +37,7 @@ class BusinessController extends CController{
 			$model->username = Yii::app()->user->name;
 			$model->uid = Yii::app()->user->id;
 			$model->url = $url;
-			$model->version = '1.0';
+			$model->version = intval($_POST['version']);
 			$model->type = 1;
 			$model->dateline = time();
 			$model->sqm = $this->create_sqm($url,$model->version);

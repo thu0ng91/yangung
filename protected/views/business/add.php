@@ -20,10 +20,22 @@
 <div class="main_deng">
    <div class="login_top">增加域名授权</div>
    <form action="<?php echo Yii::app()->createUrl('business/add');?>" method="post" style="padding:10px;">
+   		<label>
+			<span><font color="#FF0000">*</font>版本选择:</span>
+			<select name="version" class='input_text'>
+			  <option value ="1">免费版</option>
+			  <option value ="2">基础版</option>
+			  <option value="3">白金版</option>
+			  <option value="4">终极版</option>
+			</select>
+			<input name="url" type="text" value="" class='input_text'>
+		</label>
+   		
 		<label>
 			<span><font color="#FF0000">*</font>新域名:</span>
 			<input name="url" type="text" value="" class='input_text'>
 		</label>
+		
 		<div class="member_login_submit">
 			<?php echo CHtml::submitButton('提交'); ?>
 		</div>
