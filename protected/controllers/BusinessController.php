@@ -26,19 +26,26 @@ class BusinessController extends CController{
 			if(null != $result){
 				CV::showmsg('该域名已经授权',Yii::app()->createUrl('business/add'));
 			}
-			$nums = Authorizer::model()->countByAttributes(array('uid'=>Yii::app()->user->id));
-			$userinfo = User2::model()->findByAttributes(array('username'=>Yii::app()->user->name),array('select'=>'groupid'));
-			$usergroup = Group::model()->findByPk($userinfo->groupid);
-
-			if($nums >= $usergroup->version_nums){
-				CV::showmsg('域名授权已经达到上限，请联系管理员',Yii::app()->createUrl('business/add'));
-			}
+			
 			$model = new Authorizer();
 			$model->username = Yii::app()->user->name;
 			$model->uid = Yii::app()->user->id;
 			$model->url = $url;
 			$model->version = intval($_POST['version']);
-			$model->type = 1;
+			
+			$nums = Authorizer::model()->countByAttributes(array('uid'=>Yii::app()->user->id,'type'=>2));
+			$userinfo = User2::model()->findByAttributes(array('username'=>Yii::app()->user->name),array('select'=>'groupid'));
+			$usergroup = Group::model()->findByPk($userinfo->groupid);
+
+			if($model->version != 1 && $nums >= $usergroup->version_nums){
+				CV::showmsg('域名授权已经达到上限，请联系管理员',Yii::app()->createUrl('business/add'));
+			}
+			if($model->version == 1){
+				$model->type = 1;
+			}else{
+				$model->type = 2;
+			}
+
 			$model->dateline = time();
 			$model->sqm = $this->create_sqm($url,$model->version);
 			if($model->save()){
