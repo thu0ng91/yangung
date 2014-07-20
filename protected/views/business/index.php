@@ -10,14 +10,11 @@
 .submitinput {
 background: #fb8407 url(../images/min-login2.gif) repeat-x left;
 border: 1px solid #cf4500;
-height: 32px;
-line-height: 32px;
-padding: 0px 5px;
+padding: 5px 5px;
 border-radius: 5px;
 color: #fff;
 cursor: pointer;
-font-size: 14px;
-font-weight: bold;
+font-size: 12px;
 }
 </style>
 <div class="sidebar inner">
