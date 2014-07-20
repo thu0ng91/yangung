@@ -61,10 +61,22 @@ class BusinessController extends CController{
 	public function actionComment(){
 		echo 'comment';
 	}
-	public function create_sqm($url,$version) {
-	    $data = $url;
-	    $data .= $version;
-	    $hash = md5('yacms123321'.md5($data));
+	public function create_sqm($domain,$version) {
+		$sep = "|";
+		
+		$pubKey = $domain . $sep . $version;
+		$privKey = 'yun yue novel systme';
+		$des = new STD3Des($pubKey, $privKey);
+		
+		$v = array(
+		'domain' => $domain,
+		'version' => $version,
+		'username' => Yii::app()->user->name,
+		);
+		
+		$v = serialize($v);
+		$hash = $des->encrypt($v);
+
 	    return $hash;
 	}
 }
