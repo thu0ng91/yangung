@@ -34,7 +34,7 @@
 	<th style="width:30%">授权码</th>
 	</tr>
 	<?php $i=1; foreach($your as $v):?>
-	<tr style="border-bottom:1px dashed #ccc;height:30px;line-height: 30px;">
+	<tr style="border-bottom:1px dashed #ccc;">
 		<td style="text-align:center;"><?php echo $i++;?></td>
 		<td style="text-align:center;"><?php echo $v->url;?></td>
 		<td style="text-align:center;"><?php echo date('Y-m-d H:i:s',$v->dateline);?></td>
