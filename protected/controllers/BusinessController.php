@@ -14,6 +14,7 @@ class BusinessController extends CController{
 		$this->render('index',array('your'=>$your));
 	}
 	public function actionAdd(){
+		$version = Version::model()->findAll();
 		if(Yii::app()->request->isPostRequest){
 			$url = Yii::app()->request->getParam('url',null);
 			if(null == $url){
@@ -53,7 +54,7 @@ class BusinessController extends CController{
 			}
 			CV::showmsg('域名授权未成功，请联系官方',Yii::app()->createUrl('business/center'));
 		}
-		$this->render('add');
+		$this->render('add',array('version'=>$version));
 	}
 	public function actionDownload(){
 		echo 'download';

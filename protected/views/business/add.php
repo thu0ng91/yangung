@@ -23,10 +23,9 @@
    		<label>
 			<span><font color="#FF0000">*</font>版本:</span>
 			<select name="version" class='input_text'>
-			  <option value ="1">免费版</option>
-			  <option value ="2">基础版</option>
-			  <option value="3">白金版</option>
-			  <option value="4">终极版</option>
+				<?php foreach($version as $v):?>
+				<option value ="<?php echo $v->version_number;?>"><?php echo $v->title;?></option>
+				<?php endforeach;?>
 			</select>
 		</label>
    		

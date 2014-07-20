@@ -106,6 +106,12 @@ class Authorizer extends CActiveRecord
 	}
 	
 	public static function getVersion($version){
+		$r = Version::model()->findByAttributes(array('version_number'=>$version));
+		if(null != $r){
+			return $r->title;
+		}else{
+			return '未知版本';
+		}
 		switch ($version){
 			case 1:
 				$vname = '免费版';break;
