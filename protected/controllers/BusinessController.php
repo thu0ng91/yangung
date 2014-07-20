@@ -33,6 +33,7 @@ class BusinessController extends CController{
 				}
 				$model->version = addslashes($_POST['version']);
 				$model->sqm = $this->create_sqm($url,$model->version);
+				var_dump($model->save(),$model->getErrors());exit;
 				if($model->save()){
 					CV::showmsg('增加新域名授权成功',Yii::app()->createUrl('business/center'));
 				}
