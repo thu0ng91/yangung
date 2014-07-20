@@ -29,6 +29,7 @@ class BusinessController extends CController{
 			$nums = Authorizer::model()->countByAttributes(array('uid'=>Yii::app()->user->id));
 			$userinfo = User2::model()->findByAttributes(array('username'=>Yii::app()->user->name),array('select'=>'groupid'));
 			$usergroup = Group::model()->findByPk($userinfo->groupid);
+			var_dump($usergroup->version_nums);exit;
 			if($nums == $usergroup->version_nums){
 				CV::showmsg('域名授权已经达到上限，请联系管理员',Yii::app()->createUrl('business/add'));
 			}
