@@ -34,7 +34,7 @@
               <div class="shadow">
                 <div class="subViewItem">
                   <div class="entity-detail">
-                    <h3><span class="version"><?php echo $v->version;?></span><span class="time"><?php echo date('Y-m-d H:i:s',$v->posttime);?></span></h3>
+                    <h3><span class="version"><?php echo $v->version_number;?></span><span class="time"><?php echo date('Y-m-d H:i:s',$v->posttime);?></span></h3>
                     <div class="content"><?php echo $v->updatelog;?></div>
                   </div>
                   <div class="direction"></div>
@@ -50,7 +50,7 @@
               <div class="shadow">
                 <div class="subViewItem">
                   <div class="entity-detail">
-                    <h3><span class="version"><?php echo $v->version;?></span><span class="time"><?php echo date('Y-m-d H:i:s',$v->posttime);?></span></h3>
+                    <h3><span class="version"><?php echo $v->version_number;?></span><span class="time"><?php echo date('Y-m-d H:i:s',$v->posttime);?></span></h3>
                     <div class="content"><?php echo $v->updatelog;?></div>
                   </div>
                   <div class="direction"></div>
