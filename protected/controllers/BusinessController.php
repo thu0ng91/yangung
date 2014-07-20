@@ -26,14 +26,13 @@ class BusinessController extends CController{
 		if(Yii::app()->request->isPostRequest){
 			$url = Yii::app()->request->getParam('url',null);
 			$reset = Yii::app()->request->getParam('reset',null);
-			if(null == $reset){
+			if(null != $reset){
 				$model = Authorizer::model()->findByAttributes(array('url'=>$url,'uid'=>Yii::app()->user->id));
 				if(null == $model){
 					CV::showmsg('未知错误，请联系管理员',Yii::app()->createUrl('business/center'));
 				}
 				$model->version = addslashes($_POST['version']);
 				$model->sqm = $this->create_sqm($url,$model->version);
-				var_dump($model->save(),$model->getErrors());exit;
 				if($model->save()){
 					CV::showmsg('增加新域名授权成功',Yii::app()->createUrl('business/center'));
 				}
