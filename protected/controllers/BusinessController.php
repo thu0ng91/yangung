@@ -32,11 +32,17 @@ class BusinessController extends CController{
 					CV::showmsg('未知错误，请联系管理员',Yii::app()->createUrl('business/center'));
 				}
 				$model->version = addslashes($_POST['version']);
-				$buy = BuyLog::model()->findByAttributes(array('username'=>Yii::app()->user->name,'version_number'=>$model->version));
-				if($buy == null){
-					CV::showmsg('您未购买该版本授权',Yii::app()->createUrl('business/add'));
+				$versionsys = Version::model()->findByAttributes(array('version_number'=>$model->version));
+				if($versionsys->price != 0){
+					$buy = BuyLog::model()->findByAttributes(array('username'=>Yii::app()->user->name,'version_number'=>$model->version));
+					if(null == $buy){
+						CV::showmsg('您未购买该版本授权',Yii::app()->createUrl('business/add'));
+					}					
+					$endtime = $buy->endtime;
+				}else{
+					$endtime = time()+86400*365;
 				}
-				$model->sqm = $this->create_sqm($url,$model->version,$buy->endtime);
+				$model->sqm = $this->create_sqm($url,$model->version,$endtime);
 				if($model->save()){
 					CV::showmsg('增加新域名授权成功',Yii::app()->createUrl('business/center'));
 				}
@@ -72,7 +78,17 @@ class BusinessController extends CController{
 			}
 
 			$model->dateline = time();
-			$model->sqm = $this->create_sqm($url,$model->version);
+			
+			if($model->type == 2){
+				$buy = BuyLog::model()->findByAttributes(array('username'=>Yii::app()->user->name,'version_number'=>$model->version));
+				if(null == $buy){
+					CV::showmsg('您未购买该版本授权',Yii::app()->createUrl('business/add'));
+				}					
+				$endtime = $buy->endtime;
+			}else{
+				$endtime = time()+86400*365;
+			}
+			$model->sqm = $this->create_sqm($url,$model->version,$endtime);
 			if($model->save()){
 				CV::showmsg('增加新域名授权成功',Yii::app()->createUrl('business/center'));
 			}
