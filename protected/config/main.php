@@ -41,7 +41,7 @@ return array(
 
 		'user'=>array(
 			'class'=>'application.components.WebUser',
-			'allowAutoLogin'=>false,
+			'allowAutoLogin'=>true,
 		),
 		// uncomment the following to enable URLs in path-format
 		
