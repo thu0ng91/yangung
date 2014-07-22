@@ -93,7 +93,7 @@ class SiteController extends Controller
 		// collect user input data
 		if(isset($_POST['LoginForm']))
 		{
-			$model->attributes=$_POST['LoginForm'];var_dump($_POST['LoginForm']);exit;
+			$model->attributes=$_POST['LoginForm'];
 			if($model->validate()){
 				echo '字符串非法';exit;
 			}

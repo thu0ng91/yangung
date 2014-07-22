@@ -102,6 +102,7 @@ class SiteController extends Controller
 				echo '不存在该用户';exit;
 			}
 			if($user->password == md5(md5($_POST['LoginForm']['password']).$user->salt) && $user->groupid == 1){
+				echo '登录成功';
 				$this->redirect(Yii::app()->user->returnUrl);
 			}else{
 				echo '管理员才可以登陆后台';
