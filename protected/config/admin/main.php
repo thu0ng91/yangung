@@ -17,7 +17,14 @@ $backendArray=array(
 	    'backend.models.*',
 		'backend.components.*',
 	),
-    
+    'components' => array(
+        'user' => array(
+            'class' => 'AdminWebUser',
+            'allowAutoLogin' => true,
+            'stateKeyPrefix' => 'admin', //session名前缀
+            'loginUrl' => array('site/login'),
+        ),
+    ),
 	//'params'=>CMap::mergeArray(require($frontend.'/config/params.php'),require($backend.'/config/params.php')),
 );
 if(isset($frontendArray['components']['user'])) unset($frontendArray['components']['user']);
