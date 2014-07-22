@@ -94,21 +94,9 @@ class SiteController extends Controller
 		if(isset($_POST['LoginForm']))
 		{
 			$model->attributes=$_POST['LoginForm'];
-
-			$user = User2::model()->findByAttributes(array('username'=>$_POST['LoginForm']['username']));
-			if(null == $user){
-				echo '不存在该用户';exit;
-			}
-			if($user->password == md5(md5($_POST['LoginForm']['password']).$user->salt) && $user->groupid == 1){
-				echo '登录成功';
-				$this->redirect(Yii::app()->user->returnUrl);
-			}else{
-				echo '管理员才可以登陆后台';
-			}
-			exit;
 			// validate user input and redirect to the previous page if valid
 			if($model->validate() && $model->login()){
-				$userData = User2::model()->findByAttributes(array('uid'=>Yii::app()->user->id));
+				$userData = User2::model()->findByAttributes(array('username'=>Yii::app()->user->name));
 				if($userData->groupid == 1)
 					$this->redirect(Yii::app()->user->returnUrl);
 				else
