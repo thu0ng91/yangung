@@ -20,5 +20,5 @@ $backendArray=array(
     
 	//'params'=>CMap::mergeArray(require($frontend.'/config/params.php'),require($backend.'/config/params.php')),
 );
-if(isset($frontendArray['components']['user']))unset($frontendArray['components']['user']);
+if(isset($frontendArray['components']['user'])) unset($frontendArray['components']['user']);
 return CMap::mergeArray($frontendArray,$backendArray); 
