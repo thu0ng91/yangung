@@ -1,0 +1,24 @@
+<?php
+/* @var $this SettingController */
+/* @var $model Setting */
+
+$this->breadcrumbs=array(
+	'系统设置'=>array('index'),
+	$model->id,
+);
+
+?>
+
+<h1>查看设置</h1>
+
+<?php $this->widget('zii.widgets.CDetailView', array(
+	'data'=>$model,
+	'attributes'=>array(
+		'id',
+		'skey',
+		'svalue',
+	),
+)); ?>
+<?php 
+echo CHtml::link('修改',Yii::app()->createUrl('setting/update',array('id'=>$model->id)));
+?>

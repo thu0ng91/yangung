@@ -1,0 +1,27 @@
+<?php
+/* @var $this SiteController */
+
+$this->pageTitle=Yii::app()->name;
+?>
+<style>
+.bbsImg{background:#EFFDFF;}
+.bbsImg li{list-style-type:none;height:190px;overflow:hidden;width:170px;}
+.bbstitle{border-left: 5px solid #6FACCF;height:30px;line-height:30px;background:#B7D6E7;color:#fff;font-weight:bold;font-size:14px;padding-left:10px;padding-top:2px;padding-bottom:2px;margin-bottom:10px;}
+.stong a {text-decoration: none;}
+</style>
+<?php 
+if($this->username == false){
+	echo '游客';
+}else{
+	echo $this->username;
+}
+?>
+<h1>Welcome to <i><?php echo CHtml::encode(Yii::app()->name); ?></i></h1>
+
+<div class="bbstitle">杰奇插件</div>
+<div class="bbsImg"><script type="text/javascript" src="http://mxphp.com/bbs/api.php?mod=js&bid=91"></script></div>
+
+<div style="clear:both"></div>
+
+<div class="bbstitle">杰奇模板</div>
+<div class="bbsImg"><script type="text/javascript" src="http://mxphp.com/bbs/api.php?mod=js&bid=90"></script></div>
