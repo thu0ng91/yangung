@@ -32,7 +32,11 @@ class BusinessController extends CController{
 					CV::showmsg('未知错误，请联系管理员',Yii::app()->createUrl('business/center'));
 				}
 				$model->version = addslashes($_POST['version']);
-				$model->sqm = $this->create_sqm($url,$model->version);
+				$buy = BuyLog::model()->findByAttributes(array('username'=>Yii::app()->user->name,'version_number'=>$model->version));
+				if($buy == null){
+					CV::showmsg('您未购买该版本授权',Yii::app()->createUrl('business/add'));
+				}
+				$model->sqm = $this->create_sqm($url,$model->version,$buy->endtime);
 				if($model->save()){
 					CV::showmsg('增加新域名授权成功',Yii::app()->createUrl('business/center'));
 				}
@@ -82,10 +86,10 @@ class BusinessController extends CController{
 	public function actionComment(){
 		echo 'comment';
 	}
-	public function create_sqm($domain,$version) {
+	public function create_sqm($domain,$version,$endtime) {
 		$sep = "|";
 		
-		$pubKey = $domain . $sep . $version;
+		$pubKey = $domain . $sep . $version . $sep . $endtime;
 		$privKey = 'yun yue novel systme';
 		$des = new STD3Des($pubKey, $privKey);
 		
