@@ -94,9 +94,7 @@ class SiteController extends Controller
 		if(isset($_POST['LoginForm']))
 		{
 			$model->attributes=$_POST['LoginForm'];
-			if($model->validate()){
-				echo '字符串非法';exit;
-			}
+
 			$user = User2::model()->findByAttributes(array('username'=>$_POST['LoginForm']['username']));
 			if(null == $user){
 				echo '不存在该用户';exit;
