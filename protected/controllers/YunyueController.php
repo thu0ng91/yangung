@@ -22,6 +22,6 @@ class YunyueController extends CController{
 	}
 	public function actionFramenotice(){
 		$model = Notice::model()->findAllByAttributes(array('status'=>1),array('limit'=>5,'order'=>'id desc'));
-		$this->renderpartical('frame_notice',array('model'=>$model));
+		$this->renderPartial('frame_notice',array('model'=>$model));
 	}
 }
