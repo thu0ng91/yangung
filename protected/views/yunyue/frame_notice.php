@@ -15,7 +15,8 @@
 		.notice ul li {
 			height:25px;
 			line-height:25px;
-			list-style:none;			
+			list-style:none;
+			color:#ccc;font-size:12px;
 		}
 		li em {
 			display: inline-block;
@@ -35,7 +36,11 @@
   	<div class="notice">
 		<ul>
 			<?php $i=1; foreach($model as $k=>$r):?>
-			<li><em>0<?php echo $i;?>.</em> <?php $i++;?><a href="<?php echo $r->url;?>" target="_blank"><?php echo $r->title;?></a></li>
+			<li>
+				<em>0<?php echo $i;?>.</em> <?php $i++;?>
+				<a href="<?php echo $r->url;?>" target="_blank"><?php echo $r->title;?></a>
+				<font style="float:right;padding-right:10px;"><?php echo date('Y-m-d H:i:s',$r->dateline);?></font>
+			</li>
 			<?php endforeach;?>
 		</ul>
 	</div>
