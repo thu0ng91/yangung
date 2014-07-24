@@ -10,15 +10,35 @@
     <meta name="keywords" content="">
     <meta name="description" content="">
     <link href="favicon.ico" rel="shortcut icon" />
-    <title>YACMS - Vs Yunyue</title>
+    <title>官方通告</title>
+    <style>
+		.notice ul li {
+			height:25px;
+			line-height:25px;
+			list-style:none;			
+		}
+		li em {
+			display: inline-block;
+			font-size: 10px;
+			font-family: Arial;
+			color: #999;
+			-webkit-transform: scale(0.75);
+			font-style: normal;
+		}
+		li a {color:#666;font-size:14px;text-decoration: NONE;}
+		li a:hover{color:#ff7d77;}
+	</style>
   </head>
   <body>
-  <div style="">
+  <div style="border:1px #ccc solid;">
+  	<div style="background:#ccc;font-size:14px;font-weight:bold;height:30px;line-height:30px;padding-left:10px;">官方通告</div>
+  	<div class="notice">
 		<ul>
-			<?php foreach($model as $r):?>
-			<li><a href="<?php echo $r->url;?>"><?php echo $r->title;?></a></li>
+			<?php $i=1; foreach($model as $k=>$r):?>
+			<li><em>0<?php echo $i;?>.</em> <?php $i++;?><a href="<?php echo $r->url;?>" target="_blank"><?php echo $r->title;?></a></li>
 			<?php endforeach;?>
 		</ul>
+	</div>
   </div>
   </body>
 </html>
