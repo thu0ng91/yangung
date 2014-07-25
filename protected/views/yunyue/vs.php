@@ -365,12 +365,12 @@
         </tr>
         <tr> 
           <td class="tdbg2" style="line-height:20px;padding:10px;"><strong><font color="#666666">说明1：以下情况不属于服务范围 
-            </font></strong><br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="/images/bullet_blue.JPG" width="16" height="16">&nbsp;<font color="#333333">自行修改或使用非原始小说系统程序代码产生的问题；</font><br> 
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="/images/bullet_blue.JPG" width="16" height="16">&nbsp;<font color="#333333">自行对数据库进行直接操作导致数据库出错或者崩溃；</font><br> 
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="/images/bullet_blue.JPG" width="16" height="16">&nbsp;<font color="#333333">非官方的插件安装以及由于安装插件造成的故障；</font><br> 
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="/images/bullet_blue.JPG" width="16" height="16">&nbsp;<font color="#333333">服务器、虚拟主机原因造成的系统故障；</font><br> 
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="/images/bullet_blue.JPG" width="16" height="16">&nbsp;<font color="#333333">二次开发或定制；</font><br> 
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="/images/bullet_blue.JPG" width="16" height="16">&nbsp;<font color="#333333">其他服务范围未列出内容。</font> 
+            </font></strong><br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="<?php echo Yii::app()->baseUrl ;?>/images/bullet_blue.JPG" width="16" height="16">&nbsp;<font color="#333333">自行修改或使用非原始小说系统程序代码产生的问题；</font><br> 
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="<?php echo Yii::app()->baseUrl ;?>/images/bullet_blue.JPG" width="16" height="16">&nbsp;<font color="#333333">自行对数据库进行直接操作导致数据库出错或者崩溃；</font><br> 
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="<?php echo Yii::app()->baseUrl ;?>/images/bullet_blue.JPG" width="16" height="16">&nbsp;<font color="#333333">非官方的插件安装以及由于安装插件造成的故障；</font><br> 
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="<?php echo Yii::app()->baseUrl ;?>/images/bullet_blue.JPG" width="16" height="16">&nbsp;<font color="#333333">服务器、虚拟主机原因造成的系统故障；</font><br> 
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="<?php echo Yii::app()->baseUrl ;?>/images/bullet_blue.JPG" width="16" height="16">&nbsp;<font color="#333333">二次开发或定制；</font><br> 
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="<?php echo Yii::app()->baseUrl ;?>/images/bullet_blue.JPG" width="16" height="16">&nbsp;<font color="#333333">其他服务范围未列出内容。</font> 
           </td>
         </tr>
         <tr> 
