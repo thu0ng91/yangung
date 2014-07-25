@@ -72,7 +72,7 @@
             <div align="center"></div></td>
         </tr>
         <tr class="tdbg2"> 
-          <td height="28">&nbsp;&nbsp;E-mail 支持<font color="#000000"> <a href="#empirecms" style="CURSOR: hand" onclick="turnit(e2)"><img src="/images/bzwh.gif" width="14" height="14" border="0" align="absmiddle"></a></font><span id="e2" style="display:none;line-height:20px"><br>
+          <td height="28">&nbsp;&nbsp;E-mail 支持<font color="#000000"> <a href="#dian" style="CURSOR: hand" onclick="turnit(e2)"><img src="<?php echo Yii::app()->baseUrl ;?>/images/bzwh.gif" width="14" height="14" border="0" align="absmiddle"></a></font><span id="e2" style="display:none;line-height:20px"><br>
             <br>
             <font color="#333333">通过发送Email到官方邮箱获得技术支持</font></span></td>
             <td height="28" class="tdbg2"><div align="center">×</div></td>
@@ -81,7 +81,7 @@
           <td height="28" class="tdbg2" align=center><div class="ok">√</div></td>
         </tr>
 		<tr class="tdbg2"> 
-          <td height="28">&nbsp;&nbsp;QQ群技术支持 <font color="#000000"><a href="#empirecms" style="CURSOR: hand" onclick="turnit(e3)"><img src="/images/bzwh.gif" width="14" height="14" border="0" align="absmiddle"></a></font><span id="e3" style="display:none;line-height:20px"><br>
+          <td height="28">&nbsp;&nbsp;QQ群技术支持 <font color="#000000"><a href="#dian" style="CURSOR: hand" onclick="turnit(e3)"><img src="<?php echo Yii::app()->baseUrl ;?>/images/bzwh.gif" width="14" height="14" border="0" align="absmiddle"></a></font><span id="e3" style="display:none;line-height:20px"><br>
             <br>
             <font color="#333333">&nbsp;通过官方QQ群提问获得技术支持</font></span> </td>
             <td height="28" class="tdbg2"><div align="center">×</div></td>
@@ -90,7 +90,7 @@
           <td height="28" class="tdbg2" align=center><div class="ok">√</div></td>
         </tr>
         <tr class="tdbg2"> 
-          <td height="28">&nbsp;&nbsp;QQ支持 <font color="#000000"><a href="#empirecms" style="CURSOR: hand" onclick="turnit(e3)"><img src="/images/bzwh.gif" width="14" height="14" border="0" align="absmiddle"></a></font><span id="e3" style="display:none;line-height:20px"><br>
+          <td height="28">&nbsp;&nbsp;QQ支持 <font color="#000000"><a href="#dian" style="CURSOR: hand" onclick="turnit(e3)"><img src="<?php echo Yii::app()->baseUrl ;?>/images/bzwh.gif" width="14" height="14" border="0" align="absmiddle"></a></font><span id="e3" style="display:none;line-height:20px"><br>
             <br>
             <font color="#333333">&nbsp;通过QQ、MSN即时通讯方式获得在线技术支持</font></span> </td>
             <td height="28" class="tdbg2"><div align="center">×</div></td>
@@ -99,7 +99,7 @@
           <td height="28" class="tdbg2" align=center><div class="ok">√</div></td>
         </tr>
         <tr class="tdbg2"> 
-          <td height="28">&nbsp;&nbsp;电话 支持<font color="#000000"> <a href="#empirecms" style="CURSOR: hand" onclick="turnit(e4)"><img src="/images/bzwh.gif" width="14" height="14" border="0" align="absmiddle"></a></font><span id="e4" style="display:none;line-height:20px"><br>
+          <td height="28">&nbsp;&nbsp;电话 支持<font color="#000000"> <a href="#dian" style="CURSOR: hand" onclick="turnit(e4)"><img src="<?php echo Yii::app()->baseUrl ;?>/images/bzwh.gif" width="14" height="14" border="0" align="absmiddle"></a></font><span id="e4" style="display:none;line-height:20px"><br>
             <br>
             <font color="#333333">通过电话咨询方式获得技术支持</font></span></td>
             <td height="28" class="tdbg2"><div align="center">×</div></td>
@@ -108,7 +108,7 @@
           <td height="28" class="tdbg2" align=center><div class="ok">√</div></td>
         </tr>
         <tr class="tdbg2"> 
-          <td height="28">&nbsp;&nbsp;服务时间<font color="#000000"> <a href="#empirecms" style="CURSOR: hand" onclick="turnit(e5)"><img src="/images/bzwh.gif" width="14" height="14" border="0" align="absmiddle"></a></font><span id="e5" style="display:none;line-height:20px"><br>
+          <td height="28">&nbsp;&nbsp;服务时间<font color="#000000"> <a href="#dian" style="CURSOR: hand" onclick="turnit(e5)"><img src="<?php echo Yii::app()->baseUrl ;?>/images/bzwh.gif" width="14" height="14" border="0" align="absmiddle"></a></font><span id="e5" style="display:none;line-height:20px"><br>
             <br>
             <font color="#333333">官方提供售后支持服务时间<br>
             5×8 （周一至周五9:00-17:00）<br>
@@ -120,7 +120,7 @@
               7×12</font></div></td>
         </tr>
         <tr class="tdbg2"> 
-          <td height="28">&nbsp;&nbsp;响应时间<font color="#000000"> <a href="#empirecms" style="CURSOR: hand" onclick="turnit(e6)"><img src="/images/bzwh.gif" width="14" height="14" border="0" align="absmiddle"></a></font><span id="e6" style="display:none;line-height:20px"><br>
+          <td height="28">&nbsp;&nbsp;响应时间<font color="#000000"> <a href="#dian" style="CURSOR: hand" onclick="turnit(e6)"><img src="<?php echo Yii::app()->baseUrl ;?>/images/bzwh.gif" width="14" height="14" border="0" align="absmiddle"></a></font><span id="e6" style="display:none;line-height:20px"><br>
             <br>
             <font color="#333333">工作日内：<br>
             标准服务响应时间 ＜2小时<br>
@@ -145,7 +145,7 @@
 
         <tr> 
           <td height="28" class="tdbg2">&nbsp;&nbsp;程序安装指导<font color="#000000"> 
-            <a href="#empirecms" style="CURSOR: hand" onClick="turnit(e7)"><img src="/images/bzwh.gif" width="14" height="14" border="0" align="absmiddle"></a></font><span id="e7" style="display:none;line-height:20px"><br>
+            <a href="#dian" style="CURSOR: hand" onClick="turnit(e7)"><img src="<?php echo Yii::app()->baseUrl ;?>/images/bzwh.gif" width="14" height="14" border="0" align="absmiddle"></a></font><span id="e7" style="display:none;line-height:20px"><br>
             <br>
             <font color="#333333">下载/上传到空间/服务器，使系统成功运行的问题解答指导，如：<br>
             &nbsp;系统安装程序无法完成<br>
@@ -158,7 +158,7 @@
         </tr>
         <tr> 
           <td height="28" class="tdbg2">&nbsp;&nbsp;程序升级指导<font color="#000000"> 
-            <a href="#empirecms" style="CURSOR: hand" onclick="turnit(e8)"><img src="/images/bzwh.gif" width="14" height="14" border="0" align="absmiddle"></a></font><span id="e8" style="display:none;line-height:20px"><br>
+            <a href="#dian" style="CURSOR: hand" onclick="turnit(e8)"><img src="<?php echo Yii::app()->baseUrl ;?>/images/bzwh.gif" width="14" height="14" border="0" align="absmiddle"></a></font><span id="e8" style="display:none;line-height:20px"><br>
             <br>
             <font color="#333333">将标准程序升级到新版本过程中的问题解答指导</font></span> 
           </td>
@@ -169,7 +169,7 @@
         </tr>
         <tr> 
           <td height="28" class="tdbg2">&nbsp;&nbsp;程序使用指导<font color="#000000"> 
-            <a href="#empirecms" style="CURSOR: hand" onclick="turnit(e9)"><img src="/images/bzwh.gif" width="14" height="14" border="0" align="absmiddle"></a></font><span id="e9" style="display:none;line-height:20px"><br>
+            <a href="#dian" style="CURSOR: hand" onclick="turnit(e9)"><img src="<?php echo Yii::app()->baseUrl ;?>/images/bzwh.gif" width="14" height="14" border="0" align="absmiddle"></a></font><span id="e9" style="display:none;line-height:20px"><br>
             <br>
             <font color="#333333">提供与所购标准程序相关的使用问题指导</font></span></td>
             <td height="28" class="tdbg2"><div align="center">×</div></td>
@@ -179,7 +179,7 @@
         </tr>
         <tr> 
           <td height="28" class="tdbg2">&nbsp;&nbsp;程序BUG反馈解决<font color="#000000"> 
-            <a href="#empirecms" style="CURSOR: hand" onclick="turnit(e10)"><img src="/images/bzwh.gif" width="14" height="14" border="0" align="absmiddle"></a></font><span id="e10" style="display:none;line-height:20px"><br>
+            <a href="#dian" style="CURSOR: hand" onclick="turnit(e10)"><img src="<?php echo Yii::app()->baseUrl ;?>/images/bzwh.gif" width="14" height="14" border="0" align="absmiddle"></a></font><span id="e10" style="display:none;line-height:20px"><br>
             <br>
             <font color="#333333">使用标准程序中发现的bug修复及解决方案</font></span></td>
             <td height="28" class="tdbg2"><div align="center">×</div></td>
@@ -188,7 +188,7 @@
           <td height="28" class="tdbg2" align=center><div class="ok">√</div></td>
         </tr>
         <tr> 
-          <td height="28" class="tdbg2">&nbsp;&nbsp;程序安全设置<font color="#000000"><a href="#empirecms" style="CURSOR: hand" onclick="turnit(e24)"><img src="/images/bzwh.gif" width="14" height="14" border="0" align="absmiddle"></a></font><span id="e24" style="display:none;line-height:20px"><br>
+          <td height="28" class="tdbg2">&nbsp;&nbsp;程序安全设置<font color="#000000"><a href="#dian" style="CURSOR: hand" onclick="turnit(e24)"><img src="<?php echo Yii::app()->baseUrl ;?>/images/bzwh.gif" width="14" height="14" border="0" align="absmiddle"></a></font><span id="e24" style="display:none;line-height:20px"><br>
             <br>
             <font color="#333333">检查您的PHP运行环境及对系统的安全设置给予建议及设置指导。</font> 
             </span></td>
@@ -202,7 +202,7 @@
         </tr>
         <tr> 
           <td height="28" class="tdbg2">&nbsp;&nbsp;系统故障排除<font color="#000000"> 
-            <a href="#empirecms" style="CURSOR: hand" onclick="turnit(e11)"><img src="/images/bzwh.gif" width="14" height="14" border="0" align="absmiddle"></a></font><span id="e11" style="display:none;line-height:20px"><br>
+            <a href="#dian" style="CURSOR: hand" onclick="turnit(e11)"><img src="<?php echo Yii::app()->baseUrl ;?>/images/bzwh.gif" width="14" height="14" border="0" align="absmiddle"></a></font><span id="e11" style="display:none;line-height:20px"><br>
             <br>
             <font color="#333333">使用标准程序中出现的系统故障诊断与协助修复</font> </span></td>
             <td height="28" class="tdbg2"><div align="center">×</div></td>
@@ -212,7 +212,7 @@
         </tr>
         <tr> 
           <td height="28" class="tdbg2">&nbsp;&nbsp;代安装、升级服务<font color="#000000"> 
-            <a href="#empirecms" style="CURSOR: hand" onclick="turnit(e19)"><img src="/images/bzwh.gif" width="14" height="14" border="0" align="absmiddle"></a></font><span id="e19" style="display:none;line-height:20px"><br>
+            <a href="#dian" style="CURSOR: hand" onclick="turnit(e19)"><img src="<?php echo Yii::app()->baseUrl ;?>/images/bzwh.gif" width="14" height="14" border="0" align="absmiddle"></a></font><span id="e19" style="display:none;line-height:20px"><br>
             <br>
             <font color="#333333">EmpireBook全新安装（不包含运行环境），或升级到新版本，（仅限标准程序），需要用户提供服务器远程超级用户管理权限。</font></span></td>
           <td height="28" class="tdbg2"><div align="center">×</div></td>
@@ -229,7 +229,7 @@
         </tr>
         <tr> 
           <td height="28" class="tdbg2">&nbsp;&nbsp;数据库修复<font color="#000000"> 
-            <a href="#empirecms" style="CURSOR: hand" onclick="turnit(e15)"><img src="/images/bzwh.gif" width="14" height="14" border="0" align="absmiddle"></a></font><span id="e15" style="display:none;line-height:20px"><br>
+            <a href="#dian" style="CURSOR: hand" onclick="turnit(e15)"><img src="<?php echo Yii::app()->baseUrl ;?>/images/bzwh.gif" width="14" height="14" border="0" align="absmiddle"></a></font><span id="e15" style="display:none;line-height:20px"><br>
             <br>
             <font color="#333333">标准程序自身原因造成MySQL数据表损坏后的修复服务，数据限定在300MB以内，超出大小按500元/100MB计算</font></span></td>
             <td height="28" class="tdbg2"><div align="center">×</div></td>
@@ -242,7 +242,7 @@
         </tr>
         <tr> 
           <td height="28" class="tdbg2">&nbsp;&nbsp;网站数据转换<font color="#000000"> 
-            <a href="#empirecms" style="CURSOR: hand" onclick="turnit(e13)"><img src="/images/bzwh.gif" width="14" height="14" border="0" align="absmiddle"></a></font><span id="e13" style="display:none;line-height:20px"><br>
+            <a href="#dian" style="CURSOR: hand" onclick="turnit(e13)"><img src="<?php echo Yii::app()->baseUrl ;?>/images/bzwh.gif" width="14" height="14" border="0" align="absmiddle"></a></font><span id="e13" style="display:none;line-height:20px"><br>
             <br>
             <font color="#333333">&nbsp;将常见的CMS程序转换到云阅小说，转换数据限定在300MB以内，超出大小按800元/100MB计算，一次性服务</font></span></td>
             <td height="28" class="tdbg2"><div align="center">×</div></td>
@@ -252,7 +252,7 @@
         </tr>
         <tr> 
           <td height="28" class="tdbg2">&nbsp;&nbsp;服务器间网站数据迁移<font color="#000000"> 
-            <a href="#empirecms" style="CURSOR: hand" onclick="turnit(e14)"><img src="/images/bzwh.gif" width="14" height="14" border="0" align="absmiddle"></a></font><span id="e14" style="display:none;line-height:20px"><br>
+            <a href="#dian" style="CURSOR: hand" onclick="turnit(e14)"><img src="<?php echo Yii::app()->baseUrl ;?>/images/bzwh.gif" width="14" height="14" border="0" align="absmiddle"></a></font><span id="e14" style="display:none;line-height:20px"><br>
             <br>
             <font color="#333333">&nbsp;远程协助用户将EmpireBook网站数据从一台服务器迁移至另一台服务器上</font></span></td>
             <td height="28" class="tdbg2"><div align="center">×</div></td>
@@ -269,7 +269,7 @@
         </tr>
         <tr> 
           <td height="28" class="tdbg2">&nbsp;&nbsp;运行环境安装<font color="#000000"> 
-            <a href="#empirecms" style="CURSOR: hand" onclick="turnit(e17)"><img src="/images/bzwh.gif" width="14" height="14" border="0" align="absmiddle"></a></font><span id="e17" style="display:none;line-height:20px"><br>
+            <a href="#dian" style="CURSOR: hand" onclick="turnit(e17)"><img src="<?php echo Yii::app()->baseUrl ;?>/images/bzwh.gif" width="14" height="14" border="0" align="absmiddle"></a></font><span id="e17" style="display:none;line-height:20px"><br>
             <br>
             <font color="#333333">运行环境（IIS或Apache、PHP、MySQL和Zend Optimizer）的全新安装，远程一次性服务</font></span></td>
             <td height="28" class="tdbg2"><div align="center">×</div></td>
@@ -279,7 +279,7 @@
         </tr>
         <tr> 
           <td height="28" class="tdbg2">&nbsp;&nbsp;网站数据部署指导<font color="#000000"> 
-            <a href="#empirecms" style="CURSOR: hand" onclick="turnit(e27)"><img src="/images/bzwh.gif" width="14" height="14" border="0" align="absmiddle"></a></font><span id="e27" style="display:none;line-height:20px"><br>
+            <a href="#dian" style="CURSOR: hand" onclick="turnit(e27)"><img src="<?php echo Yii::app()->baseUrl ;?>/images/bzwh.gif" width="14" height="14" border="0" align="absmiddle"></a></font><span id="e27" style="display:none;line-height:20px"><br>
             <br>
             <font color="#333333">针对用户站点栏目提供相应的数据库与附件存放部署方案，最大程度使数据存放更合理更优化。</font></span></td>
             <td height="28" class="tdbg2"><div align="center">×</div></td>
@@ -289,7 +289,7 @@
         </tr>
         <tr> 
           <td height="28" class="tdbg2">&nbsp;&nbsp;二次开发技术咨询<font color="#000000"> 
-            <a href="#empirecms" style="CURSOR: hand" onclick="turnit(e20)"><img src="/images/bzwh.gif" width="14" height="14" border="0" align="absmiddle"></a></font><span id="e20" style="display:none;line-height:20px"><br>
+            <a href="#dian" style="CURSOR: hand" onclick="turnit(e20)"><img src="<?php echo Yii::app()->baseUrl ;?>/images/bzwh.gif" width="14" height="14" border="0" align="absmiddle"></a></font><span id="e20" style="display:none;line-height:20px"><br>
             <br>
             <font color="#333333">对标准程序暂未提供的功能和界面提供开发可能性及必要性的咨询</font></span></td>
             <td height="28" class="tdbg2"><div align="center">×</div></td>
@@ -348,7 +348,7 @@
         </tr>
         <tr> 
           <td height="28" class="tdbg2">&nbsp;&nbsp;服务网站数量<font color="#000000"> 
-            <a href="#empirecms" style="CURSOR: hand" onclick="turnit(e21)"><img src="/images/bzwh.gif" width="14" height="14" border="0" align="absmiddle"></a></font><span id="e21" style="display:none;line-height:20px"><br>
+            <a href="#dian" style="CURSOR: hand" onclick="turnit(e21)"><img src="/images/bzwh.gif" width="14" height="14" border="0" align="absmiddle"></a></font><span id="e21" style="display:none;line-height:20px"><br>
             <br>
             <font color="#333333">一份商业授权服务于一个网站</font></span></td>
             <td height="28" class="tdbg2"><div align="center">×</div></td>
