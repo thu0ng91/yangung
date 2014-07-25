@@ -72,6 +72,15 @@
             <div align="center"></div></td>
         </tr>
         <tr class="tdbg2"> 
+          <td height="28">&nbsp;&nbsp;论坛支持<font color="#000000"> <a href="#dian" style="CURSOR: hand" onclick="turnit(e2)"><img src="<?php echo Yii::app()->baseUrl ;?>/images/wenhao.png" width="14" height="14" border="0" align="absmiddle"></a></font><span id="e2" style="display:none;line-height:20px"><br>
+            <br>
+            <font color="#333333">通过论坛交流获得技术支持</font></span></td>
+          <td height="28" class="tdbg2" align=center><div class="ok">√</div></td>
+          <td height="28" class="tdbg2" align=center><div class="ok">√</div></td>
+          <td height="28" class="tdbg2" align=center><div class="ok">√</div></td>
+          <td height="28" class="tdbg2" align=center><div class="ok">√</div></td>
+        </tr>
+        <tr class="tdbg2"> 
           <td height="28">&nbsp;&nbsp;E-mail 支持<font color="#000000"> <a href="#dian" style="CURSOR: hand" onclick="turnit(e2)"><img src="<?php echo Yii::app()->baseUrl ;?>/images/wenhao.png" width="14" height="14" border="0" align="absmiddle"></a></font><span id="e2" style="display:none;line-height:20px"><br>
             <br>
             <font color="#333333">通过发送Email到官方邮箱获得技术支持</font></span></td>
@@ -348,7 +357,7 @@
         </tr>
         <tr> 
           <td height="28" class="tdbg2">&nbsp;&nbsp;服务网站数量<font color="#000000"> 
-            <a href="#dian" style="CURSOR: hand" onclick="turnit(e21)"><img src="/images/wenhao.png" width="14" height="14" border="0" align="absmiddle"></a></font><span id="e21" style="display:none;line-height:20px"><br>
+            <a href="#dian" style="CURSOR: hand" onclick="turnit(e21)"><img src="<?php echo Yii::app()->baseUrl ;?>/images/wenhao.png" width="14" height="14" border="0" align="absmiddle"></a></font><span id="e21" style="display:none;line-height:20px"><br>
             <br>
             <font color="#333333">一份商业授权服务于一个网站</font></span></td>
             <td height="28" class="tdbg2"><div align="center">×</div></td>
