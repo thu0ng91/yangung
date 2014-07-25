@@ -412,6 +412,4 @@ font-weight: bold;
 .tdbg{background:#f2f5f9;line-height:30px;height:30px;border:1px #ccc solid;padding:5px;}
 .tdbg2{background:#fff;border:1px #ccc solid;height:25px;line-height: 25px;}
 .tdbg3{background:#F2F5F9;}
-span{display:none;}
-a:hover span{display:block;top:28px;left:30px;position:absolute;padding:4px;border:1px #ccc solid}
 </style>
