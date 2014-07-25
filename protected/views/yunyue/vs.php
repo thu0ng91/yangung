@@ -4,7 +4,7 @@
 	售前咨询：<br>
 	<a href="tencent://message/?uin=5524812&amp;Site=云阅网络&amp;Menu=yes" target="blank">5524812&nbsp;&nbsp;(点击交谈)</a><br>
 	<a href="tencent://message/?uin=81169969&amp;Site=云阅网络&amp;Menu=yes" target="blank">81169969&nbsp;&nbsp;(点击交谈)</a><br>
-	Email: business@yunyuewang.com <br><br>
+	Email: <a href="mailto:business@yunyuewang.com">business@yunyuewang.com</a> <br><br>
 	
 	汇款帐号信息： <br>
  	注：1.汇款金额最好加个零头，便于区别。如您的QQ号尾数为18，那您可以在汇款时多汇0.18元以示区别。<br>
