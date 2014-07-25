@@ -34,23 +34,14 @@
           <div class="ripple"></div>
         </div>
       </div>
-<script type="text/javascript">
-function turnit(id){
-	var dom = document.getElementById(id);
-	if(dom.style.display=='none'){
-		dom.style.display='block';
-	}else{
-		dom.style.display='none';
-	}
-}
-</script>   
+  
 <table style="width:980px;margin:0 auto;background:#B6D0F4;padding:10px;margin-top:10px;" border="0" cellpadding="2" cellspacing="2">
         <tr style="line-height:30px;height:30px;"> 
-          <td width="20%" height="28"class="tdbg"><font color="#333333"><strong>&nbsp;&nbsp;商业授权版本类型</strong></font></td>
-          <td width="20%" height="28"class="tdbg"> <div align="center"><font color="#333333"><strong>免费版</strong></font></div></td>
-          <td width="20%" height="28"class="tdbg"> <div align="center"><font color="#333333"><strong>基础版</strong></font></div></td>
+          <td width="20%" height="28" class="tdbg"><font color="#333333"><strong>&nbsp;&nbsp;商业授权版本类型</strong></font></td>
+          <td width="20%" height="28" class="tdbg"> <div align="center"><font color="#333333"><strong>免费版</strong></font></div></td>
+          <td width="20%" height="28" class="tdbg"> <div align="center"><font color="#333333"><strong>基础版</strong></font></div></td>
           <td width="20%" class="tdbg"> <div align="center"><font color="#333333"><strong>白金版</strong></font></div></td>
-          <td width="20%" height="28"class="tdbg"> <div align="center"><font color="#333333"><strong>钻石版</strong></font></div></td>
+          <td width="20%" height="28" class="tdbg"> <div align="center"><font color="#333333"><strong>钻石版</strong></font></div></td>
         </tr>
         <tr> 
           <td height="28" class="tdbg2">&nbsp;&nbsp;授权与服务价格(人民币)</td>
@@ -81,56 +72,42 @@ function turnit(id){
             <div align="center"></div></td>
         </tr>
         <tr class="tdbg2"> 
-          <td height="28">&nbsp;&nbsp;论坛支持<font color="#000000"> <a href="#dian" style="CURSOR: hand" onclick="turnit(e2)"><img src="<?php echo Yii::app()->baseUrl ;?>/images/wenhao.png" width="14" height="14" border="0" align="absmiddle"></a></font><span id="e2" style="display:none;line-height:20px"><br>
-            <br>
-            <font color="#333333">通过论坛交流获得技术支持</font></span></td>
+          <td height="28">&nbsp;&nbsp;论坛支持</td>
           <td height="28" class="tdbg2" align=center><div class="ok">√</div></td>
           <td height="28" class="tdbg2" align=center><div class="ok">√</div></td>
           <td height="28" class="tdbg2" align=center><div class="ok">√</div></td>
           <td height="28" class="tdbg2" align=center><div class="ok">√</div></td>
         </tr>
         <tr class="tdbg2"> 
-          <td height="28">&nbsp;&nbsp;E-mail 支持<font color="#000000"> <a href="#dian" style="CURSOR: hand" onclick="turnit(e2)"><img src="<?php echo Yii::app()->baseUrl ;?>/images/wenhao.png" width="14" height="14" border="0" align="absmiddle"></a></font><span id="e2" style="display:none;line-height:20px"><br>
-            <br>
-            <font color="#333333">通过发送Email到官方邮箱获得技术支持</font></span></td>
+          <td height="28">&nbsp;&nbsp;E-mail 支持</td>
             <td height="28" class="tdbg2"><div align="center">×</div></td>
           <td height="28" class="tdbg2" align=center><div class="ok">√</div></td>
           <td height="28" class="tdbg2" align=center><div class="ok">√</div></td>
           <td height="28" class="tdbg2" align=center><div class="ok">√</div></td>
         </tr>
 		<tr class="tdbg2"> 
-          <td height="28">&nbsp;&nbsp;QQ群技术支持 <font color="#000000"><a href="#dian" style="CURSOR: hand" onclick="turnit(e3)"><img src="<?php echo Yii::app()->baseUrl ;?>/images/wenhao.png" width="14" height="14" border="0" align="absmiddle"></a></font><span id="e3" style="display:none;line-height:20px"><br>
-            <br>
-            <font color="#333333">&nbsp;通过官方QQ群提问获得技术支持</font></span> </td>
+          <td height="28">&nbsp;&nbsp;QQ群技术支持</td>
             <td height="28" class="tdbg2"><div align="center">×</div></td>
           <td height="28" class="tdbg2" align=center><div class="ok">√</div></td>
           <td height="28" class="tdbg2" align=center><div class="ok">√</div></td>
           <td height="28" class="tdbg2" align=center><div class="ok">√</div></td>
         </tr>
         <tr class="tdbg2"> 
-          <td height="28">&nbsp;&nbsp;QQ支持 <font color="#000000"><a href="#dian" style="CURSOR: hand" onclick="turnit(e3)"><img src="<?php echo Yii::app()->baseUrl ;?>/images/wenhao.png" width="14" height="14" border="0" align="absmiddle"></a></font><span id="e3" style="display:none;line-height:20px"><br>
-            <br>
-            <font color="#333333">&nbsp;通过QQ、MSN即时通讯方式获得在线技术支持</font></span> </td>
+          <td height="28">&nbsp;&nbsp;QQ支持</td>
             <td height="28" class="tdbg2"><div align="center">×</div></td>
           <td height="28" class="tdbg2"><div align="center">×</div></td>
           <td height="28" class="tdbg2" align=center><div class="ok">√</div></td>
           <td height="28" class="tdbg2" align=center><div class="ok">√</div></td>
         </tr>
         <tr class="tdbg2"> 
-          <td height="28">&nbsp;&nbsp;电话 支持<font color="#000000"> <a href="#dian" style="CURSOR: hand" onclick="turnit(e4)"><img src="<?php echo Yii::app()->baseUrl ;?>/images/wenhao.png" width="14" height="14" border="0" align="absmiddle"></a></font><span id="e4" style="display:none;line-height:20px"><br>
-            <br>
-            <font color="#333333">通过电话咨询方式获得技术支持</font></span></td>
+          <td height="28">&nbsp;&nbsp;电话支持</td>
             <td height="28" class="tdbg2"><div align="center">×</div></td>
           <td height="28" class="tdbg2"><div align="center">×</div></td>
           <td height="28" class="tdbg2"><div align="center">×</div></td>
           <td height="28" class="tdbg2" align=center><div class="ok">√</div></td>
         </tr>
         <tr class="tdbg2"> 
-          <td height="28">&nbsp;&nbsp;服务时间<font color="#000000"> <a href="#dian" style="CURSOR: hand" onclick="turnit(e5)"><img src="<?php echo Yii::app()->baseUrl ;?>/images/wenhao.png" width="14" height="14" border="0" align="absmiddle"></a></font><span id="e5" style="display:none;line-height:20px"><br>
-            <br>
-            <font color="#333333">官方提供售后支持服务时间<br>
-            5×8 （周一至周五9:00-17:00）<br>
-            7×8 （周一至周日9:00-17:00）<br>
+          <td height="28">&nbsp;&nbsp;服务时间</td>
             <td height="28" class="tdbg2"><div align="center">×</div></td>
           <td height="28" class="tdbg2"><div align="center">×</div></td>
           <td class="tdbg2"> <div align="center"><font size="2">5×8</font></div></td>
@@ -138,11 +115,7 @@ function turnit(id){
               7×12</font></div></td>
         </tr>
         <tr class="tdbg2"> 
-          <td height="28">&nbsp;&nbsp;响应时间<font color="#000000"> <a href="#dian" style="CURSOR: hand" onclick="turnit(e6)"><img src="<?php echo Yii::app()->baseUrl ;?>/images/wenhao.png" width="14" height="14" border="0" align="absmiddle"></a></font><span id="e6" style="display:none;line-height:20px"><br>
-            <br>
-            <font color="#333333">工作日内：<br>
-            标准服务响应时间 ＜2小时<br>
-            金牌服务响应时间 ＜1小时<br>
+          <td height="28">&nbsp;&nbsp;响应时间</td>
             <td height="28" class="tdbg2"><div align="center">×</div></td>
           <td height="28" class="tdbg2"><div align="center">12小时</div></td>
           <td> <div align="center"> 2小时</div></td>
@@ -162,54 +135,35 @@ function turnit(id){
         </tr>
 
         <tr> 
-          <td height="28" class="tdbg2">&nbsp;&nbsp;程序安装指导<font color="#000000"> 
-            <a href="#dian" style="CURSOR: hand" onClick="turnit(e7)"><img src="<?php echo Yii::app()->baseUrl ;?>/images/wenhao.png" width="14" height="14" border="0" align="absmiddle"></a></font><span id="e7" style="display:none;line-height:20px"><br>
-            <br>
-            <font color="#333333">下载/上传到空间/服务器，使系统成功运行的问题解答指导，如：<br>
-            &nbsp;系统安装程序无法完成<br>
-            &nbsp;系统安装后默认基本功能实现问题<br>
-            &nbsp;系统重装或卸载中出现的问题</font></span><font color="#333333">&nbsp;</font></font></td>
+          <td height="28" class="tdbg2">&nbsp;&nbsp;程序安装指导</td>
             <td height="28" class="tdbg2"><div align="center">×</div></td>
           <td height="28" class="tdbg2"><div align="center">×</div></td>
           <td height="28" class="tdbg2" align=center><div class="ok">√</div></td>
           <td height="28" class="tdbg2" align=center><div class="ok">√</div></td>
         </tr>
         <tr> 
-          <td height="28" class="tdbg2">&nbsp;&nbsp;程序升级指导<font color="#000000"> 
-            <a href="#dian" style="CURSOR: hand" onclick="turnit(e8)"><img src="<?php echo Yii::app()->baseUrl ;?>/images/wenhao.png" width="14" height="14" border="0" align="absmiddle"></a></font><span id="e8" style="display:none;line-height:20px"><br>
-            <br>
-            <font color="#333333">将标准程序升级到新版本过程中的问题解答指导</font></span> 
-          </td>
+          <td height="28" class="tdbg2">&nbsp;&nbsp;程序升级指导</td>
           <td height="28" class="tdbg2"><div align="center">×</div></td>
           <td height="28" class="tdbg2"><div align="center">×</div></td>
           <td height="28" class="tdbg2" align=center><div class="ok">√</div></td>
           <td height="28" class="tdbg2" align=center><div class="ok">√</div></td>
         </tr>
         <tr> 
-          <td height="28" class="tdbg2">&nbsp;&nbsp;程序使用指导<font color="#000000"> 
-            <a href="#dian" style="CURSOR: hand" onclick="turnit(e9)"><img src="<?php echo Yii::app()->baseUrl ;?>/images/wenhao.png" width="14" height="14" border="0" align="absmiddle"></a></font><span id="e9" style="display:none;line-height:20px"><br>
-            <br>
-            <font color="#333333">提供与所购标准程序相关的使用问题指导</font></span></td>
+          <td height="28" class="tdbg2">&nbsp;&nbsp;程序使用指导</td>
             <td height="28" class="tdbg2"><div align="center">×</div></td>
           <td height="28" class="tdbg2"><div align="center">×</div></td>
           <td height="28" class="tdbg2" align=center><div class="ok">√</div></td>
           <td height="28" class="tdbg2" align=center><div class="ok">√</div></td>
         </tr>
         <tr> 
-          <td height="28" class="tdbg2">&nbsp;&nbsp;程序BUG反馈解决<font color="#000000"> 
-            <a href="#dian" style="CURSOR: hand" onclick="turnit(e10)"><img src="<?php echo Yii::app()->baseUrl ;?>/images/wenhao.png" width="14" height="14" border="0" align="absmiddle"></a></font><span id="e10" style="display:none;line-height:20px"><br>
-            <br>
-            <font color="#333333">使用标准程序中发现的bug修复及解决方案</font></span></td>
+          <td height="28" class="tdbg2">&nbsp;&nbsp;程序BUG反馈解决</td>
             <td height="28" class="tdbg2"><div align="center">×</div></td>
           <td height="28" class="tdbg2"><div align="center">×</div></td>
           <td height="28" class="tdbg2" align=center><div class="ok">√</div></td>
           <td height="28" class="tdbg2" align=center><div class="ok">√</div></td>
         </tr>
         <tr> 
-          <td height="28" class="tdbg2">&nbsp;&nbsp;程序安全设置<font color="#000000"><a href="#dian" style="CURSOR: hand" onclick="turnit(e24)"><img src="<?php echo Yii::app()->baseUrl ;?>/images/wenhao.png" width="14" height="14" border="0" align="absmiddle"></a></font><span id="e24" style="display:none;line-height:20px"><br>
-            <br>
-            <font color="#333333">检查您的PHP运行环境及对系统的安全设置给予建议及设置指导。</font> 
-            </span></td>
+          <td height="28" class="tdbg2">&nbsp;&nbsp;程序安全设置</td>
             <td height="28" class="tdbg2"><div align="center">×</div></td>
           <td height="28" class="tdbg2"><div align="center">×</div></td>
           <td height="28" class="tdbg2"><div align="center">×</div></td>
@@ -219,20 +173,14 @@ function turnit(id){
           <td colspan="7">&nbsp;</td>
         </tr>
         <tr> 
-          <td height="28" class="tdbg2">&nbsp;&nbsp;系统故障排除<font color="#000000"> 
-            <a href="#dian" style="CURSOR: hand" onclick="turnit(e11)"><img src="<?php echo Yii::app()->baseUrl ;?>/images/wenhao.png" width="14" height="14" border="0" align="absmiddle"></a></font><span id="e11" style="display:none;line-height:20px"><br>
-            <br>
-            <font color="#333333">使用标准程序中出现的系统故障诊断与协助修复</font> </span></td>
+          <td height="28" class="tdbg2">&nbsp;&nbsp;系统故障排除</td>
             <td height="28" class="tdbg2"><div align="center">×</div></td>
           <td height="28" class="tdbg2"><div align="center">×</div></td>
           <td height="28" class="tdbg2"><div align="center">×</div></td>
           <td height="28" class="tdbg2" align=center><div class="ok">√</div></td>
         </tr>
         <tr> 
-          <td height="28" class="tdbg2">&nbsp;&nbsp;代安装、升级服务<font color="#000000"> 
-            <a href="#dian" style="CURSOR: hand" onclick="turnit(e19)"><img src="<?php echo Yii::app()->baseUrl ;?>/images/wenhao.png" width="14" height="14" border="0" align="absmiddle"></a></font><span id="e19" style="display:none;line-height:20px"><br>
-            <br>
-            <font color="#333333">EmpireBook全新安装（不包含运行环境），或升级到新版本，（仅限标准程序），需要用户提供服务器远程超级用户管理权限。</font></span></td>
+          <td height="28" class="tdbg2">&nbsp;&nbsp;代安装、升级服务</td>
           <td height="28" class="tdbg2"><div align="center">×</div></td>
           <td height="28" class="tdbg2"><div align="center">×</div></td>
           <td height="28" class="tdbg2"><div align="center">×</div></td>
@@ -246,10 +194,7 @@ function turnit(id){
           <td height="28" class="tdbg2"><div align="center">2次</div></td>
         </tr>
         <tr> 
-          <td height="28" class="tdbg2">&nbsp;&nbsp;数据库修复<font color="#000000"> 
-            <a href="#dian" style="CURSOR: hand" onclick="turnit(e15)"><img src="<?php echo Yii::app()->baseUrl ;?>/images/wenhao.png" width="14" height="14" border="0" align="absmiddle"></a></font><span id="e15" style="display:none;line-height:20px"><br>
-            <br>
-            <font color="#333333">标准程序自身原因造成MySQL数据表损坏后的修复服务，数据限定在300MB以内，超出大小按500元/100MB计算</font></span></td>
+          <td height="28" class="tdbg2">&nbsp;&nbsp;数据库修复</td>
             <td height="28" class="tdbg2"><div align="center">×</div></td>
           <td height="28" class="tdbg2"><div align="center">×</div></td>
           <td height="28" class="tdbg2"><div align="center">×</div></td>
@@ -259,20 +204,14 @@ function turnit(id){
           <td colspan="7">&nbsp;</td>
         </tr>
         <tr> 
-          <td height="28" class="tdbg2">&nbsp;&nbsp;网站数据转换<font color="#000000"> 
-            <a href="#dian" style="CURSOR: hand" onclick="turnit(e13)"><img src="<?php echo Yii::app()->baseUrl ;?>/images/wenhao.png" width="14" height="14" border="0" align="absmiddle"></a></font><span id="e13" style="display:none;line-height:20px"><br>
-            <br>
-            <font color="#333333">&nbsp;将常见的CMS程序转换到云阅小说，转换数据限定在300MB以内，超出大小按800元/100MB计算，一次性服务</font></span></td>
+          <td height="28" class="tdbg2">&nbsp;&nbsp;网站数据转换</td>
             <td height="28" class="tdbg2"><div align="center">×</div></td>
           <td height="28" class="tdbg2"><div align="center">×</div></td>
           <td height="28" class="tdbg2"><div align="center">×</div></td>
           <td height="28" class="tdbg2" align=center><div class="ok">√</div></td>
         </tr>
         <tr> 
-          <td height="28" class="tdbg2">&nbsp;&nbsp;服务器间网站数据迁移<font color="#000000"> 
-            <a href="#dian" style="CURSOR: hand" onclick="turnit(e14)"><img src="<?php echo Yii::app()->baseUrl ;?>/images/wenhao.png" width="14" height="14" border="0" align="absmiddle"></a></font><span id="e14" style="display:none;line-height:20px"><br>
-            <br>
-            <font color="#333333">&nbsp;远程协助用户将EmpireBook网站数据从一台服务器迁移至另一台服务器上</font></span></td>
+          <td height="28" class="tdbg2">&nbsp;&nbsp;服务器间网站数据迁移</td>
             <td height="28" class="tdbg2"><div align="center">×</div></td>
 		  <td height="28" class="tdbg2"><div align="center">×</div></td>
           <td height="28" class="tdbg2"> <div align="center">1次</div></td>
@@ -286,30 +225,21 @@ function turnit(id){
 		  <td height="28" class="tdbg2"><div align="center">2次</div></td>
         </tr>
         <tr> 
-          <td height="28" class="tdbg2">&nbsp;&nbsp;运行环境安装<font color="#000000"> 
-            <a href="#dian" style="CURSOR: hand" onclick="turnit(e17)"><img src="<?php echo Yii::app()->baseUrl ;?>/images/wenhao.png" width="14" height="14" border="0" align="absmiddle"></a></font><span id="e17" style="display:none;line-height:20px"><br>
-            <br>
-            <font color="#333333">运行环境（IIS或Apache、PHP、MySQL和Zend Optimizer）的全新安装，远程一次性服务</font></span></td>
+          <td height="28" class="tdbg2">&nbsp;&nbsp;运行环境安装</td>
             <td height="28" class="tdbg2"><div align="center">×</div></td>
           <td height="28" class="tdbg2"><div align="center">×</div></td>
           <td height="28" class="tdbg2" align=center><div class="ok">√</div></td>
 		  <td height="28" class="tdbg2" align=center><div class="ok">√</div></td>
         </tr>
         <tr> 
-          <td height="28" class="tdbg2">&nbsp;&nbsp;网站数据部署指导<font color="#000000"> 
-            <a href="#dian" style="CURSOR: hand" onclick="turnit(e27)"><img src="<?php echo Yii::app()->baseUrl ;?>/images/wenhao.png" width="14" height="14" border="0" align="absmiddle"></a></font><span id="e27" style="display:none;line-height:20px"><br>
-            <br>
-            <font color="#333333">针对用户站点栏目提供相应的数据库与附件存放部署方案，最大程度使数据存放更合理更优化。</font></span></td>
+          <td height="28" class="tdbg2">&nbsp;&nbsp;网站数据部署指导</td>
             <td height="28" class="tdbg2"><div align="center">×</div></td>
           <td height="28" class="tdbg2"><div align="center">×</div></td>
           <td height="28" class="tdbg2" align=center><div class="ok">√</div></td>
 		  <td height="28" class="tdbg2" align=center><div class="ok">√</div></td>
         </tr>
         <tr> 
-          <td height="28" class="tdbg2">&nbsp;&nbsp;二次开发技术咨询<font color="#000000"> 
-            <a href="#dian" style="CURSOR: hand" onclick="turnit(e20)"><span>内容信息页面</span><img src="<?php echo Yii::app()->baseUrl ;?>/images/wenhao.png" width="14" height="14" border="0" align="absmiddle"></a></font><span id="e20" style="display:none;line-height:20px"><br>
-            <br>
-            <font color="#333333">对标准程序暂未提供的功能和界面提供开发可能性及必要性的咨询</font></span></td>
+          <td height="28" class="tdbg2">&nbsp;&nbsp;二次开发技术咨询</td>
             <td height="28" class="tdbg2"><div align="center">×</div></td>
           <td height="28" class="tdbg2"><div align="center">×</div></td>
           <td height="28" class="tdbg2"><div align="center">×</div></td>
@@ -365,10 +295,7 @@ function turnit(id){
           <td height="28" class="tdbg2"> <div align="center">1年</div></td>
         </tr>
         <tr> 
-          <td height="28" class="tdbg2">&nbsp;&nbsp;服务网站数量<font color="#000000"> 
-            <a href="#dian" style="CURSOR: hand" onclick="turnit(e21)"><img src="<?php echo Yii::app()->baseUrl ;?>/images/wenhao.png" width="14" height="14" border="0" align="absmiddle"></a></font><span id="e21" style="display:none;line-height:20px"><br>
-            <br>
-            <font color="#333333">一份商业授权服务于一个网站</font></span></td>
+          <td height="28" class="tdbg2">&nbsp;&nbsp;服务网站数量</td>
             <td height="28" class="tdbg2"><div align="center">×</div></td>
           <td height="28" class="tdbg2"><div align="center">1个</div></td>
           <td class="tdbg2"> <div align="center">1个</div></td>
@@ -402,6 +329,15 @@ function turnit(id){
           <td height="15" class="tdbg2" style="line-height:20px;padding:10px;"><strong><font color="#666666">本页价格政策从2014年8月15日起执行。</font></strong></td>
         </tr>
       </table>
+<script>
+function turnit(ss)
+{
+ if (ss.style.display=="") 
+  ss.style.display="none";
+ else
+  ss.style.display=""; 
+}
+</script>
 
       <style>
 .ok {
