@@ -298,7 +298,7 @@
         </tr>
         <tr> 
           <td height="28" class="tdbg2">&nbsp;&nbsp;二次开发技术咨询<font color="#000000"> 
-            <a href="#dian" style="CURSOR: hand" onclick="turnit(e20)"><img src="<?php echo Yii::app()->baseUrl ;?>/images/wenhao.png" width="14" height="14" border="0" align="absmiddle"></a></font><span id="e20" style="display:none;line-height:20px"><br>
+            <a href="#dian" style="CURSOR: hand" onclick="turnit(e20)"><span>内容信息页面</span><img src="<?php echo Yii::app()->baseUrl ;?>/images/wenhao.png" width="14" height="14" border="0" align="absmiddle"></a></font><span id="e20" style="display:none;line-height:20px"><br>
             <br>
             <font color="#333333">对标准程序暂未提供的功能和界面提供开发可能性及必要性的咨询</font></span></td>
             <td height="28" class="tdbg2"><div align="center">×</div></td>
@@ -357,7 +357,7 @@
         </tr>
         <tr> 
           <td height="28" class="tdbg2">&nbsp;&nbsp;服务网站数量<font color="#000000"> 
-            <a href="#dian" style="CURSOR: hand" onclick="turnit(e21)"><img src="<?php echo Yii::app()->baseUrl ;?>/images/wenhao.png" width="14" height="14" border="0" align="absmiddle"></a></font><span id="e21" style="display:none;line-height:20px"><br>
+            <a href="#dian" style="CURSOR: hand" onclick="turnit('shsd')"><img src="<?php echo Yii::app()->baseUrl ;?>/images/wenhao.png" width="14" height="14" border="0" align="absmiddle"></a></font><span id="e21" style="display:none;line-height:20px"><br>
             <br>
             <font color="#333333">一份商业授权服务于一个网站</font></span></td>
             <td height="28" class="tdbg2"><div align="center">×</div></td>
@@ -393,6 +393,11 @@
           <td height="15" class="tdbg2" style="line-height:20px;padding:10px;"><strong><font color="#666666">本页价格政策从2014年8月15日起执行。</font></strong></td>
         </tr>
       </table>
+<script type="text/javascript">
+function turnit(msg){
+	
+}
+</script>
       <style>
 .ok {
 background: green;
@@ -404,4 +409,6 @@ font-weight: bold;
 .tdbg{background:#f2f5f9;line-height:30px;height:30px;border:1px #ccc solid;padding:5px;}
 .tdbg2{background:#fff;border:1px #ccc solid;height:25px;line-height: 25px;}
 .tdbg3{background:#F2F5F9;}
+span{display:none;}
+a:hover span{display:block;top:28px;left:30px;position:absolute;padding:4px;border:1px #ccc solid}
 </style>
