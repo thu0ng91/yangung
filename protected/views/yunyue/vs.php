@@ -357,7 +357,7 @@
         </tr>
         <tr> 
           <td height="28" class="tdbg2">&nbsp;&nbsp;服务网站数量<font color="#000000"> 
-            <a href="#dian" style="CURSOR: hand" onclick="turnit('shsd')"><img src="<?php echo Yii::app()->baseUrl ;?>/images/wenhao.png" width="14" height="14" border="0" align="absmiddle"></a></font><span id="e21" style="display:none;line-height:20px"><br>
+            <a href="#dian" style="CURSOR: hand" onclick="turnit(e21)"><img src="<?php echo Yii::app()->baseUrl ;?>/images/wenhao.png" width="14" height="14" border="0" align="absmiddle"></a></font><span id="e21" style="display:none;line-height:20px"><br>
             <br>
             <font color="#333333">一份商业授权服务于一个网站</font></span></td>
             <td height="28" class="tdbg2"><div align="center">×</div></td>
@@ -394,8 +394,11 @@
         </tr>
       </table>
 <script type="text/javascript">
-function turnit(msg){
-	
+function turnit(id){
+	if(document.getElementById(id).style.display=='none')
+        document.getElementById(id).style.display='block';
+	else
+		document.getElementById(id).style.display='none';
 }
 </script>
       <style>
