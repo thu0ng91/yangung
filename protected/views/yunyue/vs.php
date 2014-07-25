@@ -34,7 +34,16 @@
           <div class="ripple"></div>
         </div>
       </div>
-      
+<script type="text/javascript">
+function turnit(id){
+	var dom = document.getElementById(id);
+	if(dom.style.display=='none'){
+		dom.style.display='block';
+	}else{
+		dom.style.display='none';
+	}
+}
+</script>   
 <table style="width:980px;margin:0 auto;background:#B6D0F4;padding:10px;margin-top:10px;" border="0" cellpadding="2" cellspacing="2">
         <tr style="line-height:30px;height:30px;"> 
           <td width="20%" height="28"class="tdbg"><font color="#333333"><strong>&nbsp;&nbsp;商业授权版本类型</strong></font></td>
@@ -393,14 +402,7 @@
           <td height="15" class="tdbg2" style="line-height:20px;padding:10px;"><strong><font color="#666666">本页价格政策从2014年8月15日起执行。</font></strong></td>
         </tr>
       </table>
-<script type="text/javascript">
-function turnit(id){
-	if(document.getElementById(id).style.display=='none')
-        document.getElementById(id).style.display='block';
-	else
-		document.getElementById(id).style.display='none';
-}
-</script>
+
       <style>
 .ok {
 background: green;
