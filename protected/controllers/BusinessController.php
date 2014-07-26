@@ -97,7 +97,30 @@ class BusinessController extends CController{
 		$this->render('add',array('version'=>$version,'model'=>$model));
 	}
 	public function actionDownload(){
-		$this->render('download');
+		$shouquan = Authorizer::model()->findAllByAttributes(array('uid'=>Yii::app()->user->id));
+		$data = array();
+		foreach($shouquan as $v){
+			$version = Version::model()->findByAttributes(array('version_number'=>$v->version));
+			$data[] = $version;
+		}
+		$this->render('download',array('data'=>$data));
+	}
+	public function actionDodownload(){
+		$uid = Yii::app()->request->getParam('uid',null);
+		$time = Yii::app()->request->getParam('time',null);
+		$version = Yii::app()->request->getParam('version',null);
+		$result = Authorizer::model()->findByAttributes(array('uid'=>$uid));
+		if(null == $result){
+			CV::showmsg('非法下载',Yii::app()->createUrl('site/index'));
+		}
+		$fileUrl = Yii::app()->baseUrl.'/downs/'.$result->version.'.zip';
+		$fileName = '云阅小说系统'.$result->version.'.zip';
+		$data = file_get_contents($fileUrl);
+		header("Content-type: application/octet-stream");
+		header("Accept-Ranges: bytes");
+		header("Accept-Length: ".filesize($fileUrl));
+		header("Content-Disposition: attachment; filename=" . $fileName);
+		echo $data;
 	}
 	public function actionComment(){
 		echo 'comment';

@@ -27,9 +27,9 @@
 
 <div class="active" id="memberbox">
 <div id="member_basic">
-<a href="">免费版下载</a>
-
-<a href="">基础版下载</a>
+<?php foreach($data as $v):?>
+<a href="<?php echo Yii::app()->createUrl('business/dodownload',array('uid'=>Yii::app()->user->id,'time'=>time(),'version'=>$v->version_number));?>"><?php echo $v->title;?></a>
+<?php endforeach;?>
 </div>
 </div>
 <div style="clear: both;"></div>
