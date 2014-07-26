@@ -114,6 +114,7 @@ class BusinessController extends CController{
 			CV::showmsg('非法下载',Yii::app()->createUrl('site/index'));
 		}
 		$fileUrl = Yii::app()->baseUrl.'/downs/'.$result->version.'.zip';
+		echo $fileUrl;exit;
 		$fileName = '云阅小说系统'.$result->version.'.zip';
 		/*$data = file_get_contents($fileUrl);
 		header("Content-type: application/octet-stream");
