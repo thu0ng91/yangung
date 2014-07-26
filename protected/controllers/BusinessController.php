@@ -115,12 +115,29 @@ class BusinessController extends CController{
 		}
 		$fileUrl = Yii::app()->baseUrl.'/downs/'.$result->version.'.zip';
 		$fileName = '云阅小说系统'.$result->version.'.zip';
-		$data = file_get_contents($fileUrl);
+		/*$data = file_get_contents($fileUrl);
 		header("Content-type: application/octet-stream");
 		header("Accept-Ranges: bytes");
 		header("Accept-Length: ".filesize($fileUrl));
 		header("Content-Disposition: attachment; filename=" . $fileName);
 		echo $data;
+		*/
+		/////
+
+		if   (!file_exists($fileUrl))   {   //检查文件是否存在  
+		  echo   "文件找不到";  
+		  exit;    
+		}else{  
+			$file = fopen($fileUrl,"r"); // 打开文件
+			// 输入文件标签
+			Header("Content-type: application/octet-stream");
+			Header("Accept-Ranges: bytes");
+			Header("Accept-Length: ".filesize($fileUrl));
+			Header("Content-Disposition: attachment; filename=" . $fileName);
+			// 输出文件内容
+			echo fread($file,filesize($fileUrl));
+			fclose($file);
+		}
 	}
 	public function actionComment(){
 		echo 'comment';
