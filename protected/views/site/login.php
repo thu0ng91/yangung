@@ -16,7 +16,7 @@
 	)); ?>
 	<?php echo $form->errorSummary($model); ?>
 		<label>
-			<span><font color="#FF0000">*</font>用户名</span>
+			<span><font color="#FF0000">*</font>会员名</span>
 			<?php echo $form->textField($model,'username',array('class'=>'input_text')); ?>
 		</label>
 	

@@ -69,10 +69,10 @@
             </div>
             <div class="btn">
 	            <a href="/download.php?type=win&time=1404545159" class="win"></a>
-	            <a href="http://www.mobfound.com//pcsuit/android/macos/trial/mobfound2_trial.dmg" class="mac"><span>推荐</span></a>
+	            <a href="" class="mac"><span>推荐</span></a>
               <!--<a href="/download.php?type=mac&time=1404545159" class="mac"></a>-->
 	            <a href="/index.php?action=cooperation" class="link"></a>
-                <a href="http://bbs.mobfound.com" class="bbs"></a>
+                <a href="http://www.yunyuewang.com/bbs" class="bbs"></a>
             </div>
           </div>
           <div class="ripple"></div>
@@ -84,8 +84,14 @@
           <div class="bg-ico"></div>
           <div class="bg-top"></div>
           <div class="bg-con">
-            <div class="ment"><p></p><p style="word-wrap: break-word; outline: none; margin: 0px; padding: 0px;"><span style="font-family:Tahoma, Arial, sans-serif;"><span style="line-height: 21px;"><span style="color:#555555;">大家好，魔方手机助手</span><span style="color:#ff0000;"><u><strong>v</strong></u><span style="background-color: rgb(255, 255, 255);"><u><strong>1.7.0.2</strong></u></span></span><span style="color:#555555;">已经发布。</span></span></span></p><br />1 解决了视网膜屏上图片不清晰的问题<br />&nbsp;<br />2 增加了双卡拨打电话的功能<br /><br />3 增加了系统应用的显示<br /><br />4 修复了部分手机连接不稳定的bug<p style="word-wrap: break-word; outline: none; margin: 0px; padding: 0px; color: rgb(85, 85, 85);"><br /></p><p>有问题请加入QQ群：<strong><span style="color:#ff0000;"><em>144426981</em></span></strong></p><p>欢迎加入群和开发人员直接反馈问题，让魔方更好</p><p>PS:使用老版本请到合作专区下载</p><p><span style="font-family:Tahoma, Arial, sans-serif;color:#565656;LINE-HEIGHT: 21px"></span></p></div>
-            <a href="http://bbs.mobfound.com/forum.php?mod=announce" target="_blank" class="more">更多…</a>
+            <div class="ment"><p></p><p style="word-wrap: break-word; outline: none; margin: 0px; padding: 0px;">
+            	<span style="font-family:Tahoma, Arial, sans-serif;">
+            		<span style="line-height: 21px;">
+            			<span style="color:#555555;">大家好，云阅小说系统内测版本</span>
+            			</span><span style="color:#555555;">已经发布。</span></span></span></p>
+            			<p>有问题请加入QQ群：<strong><span style="color:#ff0000;"><em>4359238</em></span></strong></p>
+            			<p>欢迎加入群和开发人员直接反馈问题，让云阅更好</p></p>
+            		</div>
           </div>
         </div>
         <ul class="home-list">
@@ -133,7 +139,7 @@
           </div>
           <div class="item attention">
             <h3><span class="titl">关注我们</span></h3>
-            <p><a href="http://weibo.com/mobfound" class="at-weibo">关注新浪微博</a></p>
+            <p><a href="http://weibo.com/cz2051" class="at-weibo">关注新浪微博</a></p>
           </div>
         </div>
         <div id="scriptArea" data-page-id="home-page"></div>

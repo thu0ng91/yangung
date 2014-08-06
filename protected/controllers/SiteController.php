@@ -98,7 +98,7 @@ class SiteController extends Controller
 			if($model->validate() && $model->login()){
 
                 $msg = '登录成功,正在为您跳转,请稍后……'.Yii::app()->user->uc->synlogin();
-        		CV::showmsg($msg,'/yunyue');
+        		CV::showmsg($msg,'/');
                 return;
             }
 		}
@@ -114,6 +114,6 @@ class SiteController extends Controller
 		Yii::app()->user->logout();
 
         $msg = '退出成功,正在为您跳转,请稍后……'.Yii::app()->user->uc->synlogout();
-        CV::showmsg($msg,'/yunyue');
+        CV::showmsg($msg,'/');
 	}
 }

@@ -47,8 +47,9 @@ return array(
 		
 		'urlManager'=>array(
 			//'urlFormat'=>'path',
-			//'showScriptName' => true, 'urlSuffix'=>'/',
+			//'showScriptName' => false, //'urlSuffix'=>'/',
 			'rules'=>array(
+				'about' => array('yunyue/about'),
 //				//用户中心
 //				'userinfo'=>array('member/userinfo'),
 //				//用户中心

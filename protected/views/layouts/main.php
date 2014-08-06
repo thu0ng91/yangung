@@ -30,7 +30,7 @@
 		}
 	?>
           <ul id="nav">
-				<li class="<?php if(empty($_GET['r'])) echo 'current';?>"><a href="/yunyue/index.php">首页</a></li>
+				<li class="<?php if(empty($_GET['r'])) echo 'current';?>"><a href="/index.php">首页</a></li>
 				<?php
 				 foreach ($menu as $key=>$value){
 						$url = Yii::app()->params['site_url'].$value->url;
@@ -61,7 +61,7 @@
         </div>
 	
         <div id="stuff">
-          <div class="wp"><span id="copyright">ICP备案号：沪ICP�?2008408(1/3)</span></div>
+          <div class="wp"><span id="copyright">ICP备案号：沪ICP备14032879号-1</span></div>
         </div>
       </div>
       <!-- /footer -->
