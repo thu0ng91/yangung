@@ -15,9 +15,11 @@ class YunyueController extends CController{
 		$this->render('log',array('datalog1'=>$datalog1,'datalog2'=>$datalog2));
 	}
 	public function actionVs(){
+		$this->pageTitle = '版本价格'.'--'.Yii::app()->params['sitename'];
 		$this->render('vs');
 	}
 	public function actionAbout(){
+		$this->pageTitle = '联系我们'.'--'.Yii::app()->params['sitename'];
 		$this->render('about');
 	}
 	public function actionIframenotice(){

@@ -7,7 +7,7 @@
 // CWebApplication properties can be configured here.
 return array(
 	'basePath'=>dirname(__FILE__).DIRECTORY_SEPARATOR.'..',
-	'name'=>'YACMS',
+	'name'=>'云阅小说系统',
 
 	// preloading 'log' component
 	'preload'=>array('log'),
@@ -90,7 +90,7 @@ return array(
 			'connectionString' => 'mysql:host=localhost;dbname=app',
 			'emulatePrepare' => true,
 			'username' => 'root',
-			'password' => 'root',
+			'password' => 'gr5stdv',
 			'tablePrefix'=>'yacms_',
 			'charset' => 'utf8',
 		),
@@ -98,7 +98,7 @@ return array(
 			'connectionString' => 'mysql:host=localhost;dbname=ultrax',
 			'emulatePrepare' => true,
 			'username' => 'root',
-			'password' => 'root',
+			'password' => 'gr5stdv',
 			'class'=> 'CDbConnection',
 			'tablePrefix'=>'pre_',
 			'charset' => 'utf8',

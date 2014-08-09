@@ -3,75 +3,19 @@
           <div class="wp">
             <div id="slides">
               <ul class="tab_body">
-                              <li class="ord-1">
-                  <div class="meta">
-                    <p>Mac版本</p>
-                    <p>大小：24MB</p>
-                    <p>版本：1.7.0.2(2014-04-15)</p>
-                    <p>支持系统：Mac</p>
-                    <p><a href="/index.php?action=updated">更新日志</a></p>
-                    <p style="border-bottom:1px #ccc dotted;margin:10px 0;width:200px;"></p>
-                    <p>Windows版本</p>
-                    <p>大小：21MB</p>
-                    <p>版本：v0.9.8.12beta(2013-04-09)</p>
-                    <p>支持系统：XP/2003/Vista/Windows7</p>
-                                      </div>
-                </li>
-                              <li class="ord-2">
-                  <div class="meta">
-                    <p>Mac版本</p>
-                    <p>大小：24MB</p>
-                    <p>版本：1.7.0.2(2014-04-15)</p>
-                    <p>支持系统：Mac</p>
-                    <p><a href="/index.php?action=updated">更新日志</a></p>
-                    <p style="border-bottom:1px #ccc dotted;margin:10px 0;width:200px;"></p>
-                    <p>Windows版本</p>
-                    <p>大小：21MB</p>
-                    <p>版本：v0.9.8.12beta(2013-04-09)</p>
-                    <p>支持系统：XP/2003/Vista/Windows7</p>
-                                      </div>
-                </li>
-                              <li class="ord-3">
-                  <div class="meta">
-                    <p>Mac版本</p>
-                    <p>大小：24MB</p>
-                    <p>版本：1.7.0.2(2014-04-15)</p>
-                    <p>支持系统：Mac</p>
-                    <p><a href="/index.php?action=updated">更新日志</a></p>
-                    <p style="border-bottom:1px #ccc dotted;margin:10px 0;width:200px;"></p>
-                    <p>Windows版本</p>
-                    <p>大小：21MB</p>
-                    <p>版本：v0.9.8.12beta(2013-04-09)</p>
-                    <p>支持系统：XP/2003/Vista/Windows7</p>
-                                      </div>
-                </li>
-                              <li class="ord-4">
-                  <div class="meta">
-                    <p>Mac版本</p>
-                    <p>大小：24MB</p>
-                    <p>版本：1.7.0.2(2014-04-15)</p>
-                    <p>支持系统：Mac</p>
-                    <p><a href="/index.php?action=updated">更新日志</a></p>
-                    <p style="border-bottom:1px #ccc dotted;margin:10px 0;width:200px;"></p>
-                    <p>Windows版本</p>
-                    <p>大小：21MB</p>
-                    <p>版本：v0.9.8.12beta(2013-04-09)</p>
-                    <p>支持系统：XP/2003/Vista/Windows7</p>
-                                      </div>
-                </li>
+                              <li class="ord-1"></li>
+                              <li class="ord-2"></li>
                             </ul>
               <ul class="con clearfix">
-                              <li></li>
-                              <li></li>
                               <li></li>
                               <li></li>
                             </ul>
             </div>
             <div class="btn">
-	            <a href="/download.php?type=win&time=1404545159" class="win"></a>
-	            <a href="" class="mac"><span>推荐</span></a>
-              <!--<a href="/download.php?type=mac&time=1404545159" class="mac"></a>-->
-	            <a href="/index.php?action=cooperation" class="link"></a>
+	            <a href="http://www.yunyuewang.com/bbs/forum-2-1.html" class="win"></a>
+	            <a href="http://demo.yunyuewang.com" class="mac"></a>
+				<!--<a href="" class="mac"></a>-->
+				<!--<a href="/index.php?action=cooperation" class="link"><span>new</span></a>-->
                 <a href="http://www.yunyuewang.com/bbs" class="bbs"></a>
             </div>
           </div>
@@ -85,56 +29,47 @@
           <div class="bg-top"></div>
           <div class="bg-con">
             <div class="ment"><p></p><p style="word-wrap: break-word; outline: none; margin: 0px; padding: 0px;">
-            	<span style="font-family:Tahoma, Arial, sans-serif;">
-            		<span style="line-height: 21px;">
-            			<span style="color:#555555;">大家好，云阅小说系统内测版本</span>
-            			</span><span style="color:#555555;">已经发布。</span></span></span></p>
-            			<p>有问题请加入QQ群：<strong><span style="color:#ff0000;"><em>4359238</em></span></strong></p>
-            			<p>欢迎加入群和开发人员直接反馈问题，让云阅更好</p></p>
-            		</div>
+            	<script type="text/javascript" src="http://www.yunyuewang.com/bbs/api.php?mod=js&bid=5"></script>
+            </div>
           </div>
         </div>
         <ul class="home-list">
-          <li class="ord-1"><img src="/images/1389757502.png" alt="收发短信，简单及时"/>
-            <h3>收发短信，简单及时</h3>
-            <p>电脑上便捷收发短信，群发、多人聊天、短信管理统统hold住。</p>
+          <li class="ord-1"><img src="/images/yunyue/index_1.png" alt="安全可靠，系统扩展性强大"/>
+            <h3>安全可靠，系统扩展性强大</h3>
+            <p>底层架构采用国际知名PHP框架，稳定性，安全性经受长期考验</p>
           </li>
-          <li class="ord-2"><img src="/images/1389758911.png" alt="通讯录，贴心管理"/>
-            <h3>通讯录，贴心管理</h3>
-            <p>做您的“通讯录小管家”，帮您打造更广更深的社交人脉网。</p>
+          <li class="ord-2"><img src="/images/yunyue/index_2.png" alt="自定义插件，模块功能"/>
+            <h3>自定义插件，模块功能</h3>
+            <p>根据系统内置插件和模块系统，任意定义个性化功能和插件</p>
           </li>
-          <li class="ord-3"><img src="/images/1389765696.png" alt="海量应用，一键下载"/>
-            <h3>海量应用，一键下载</h3>
-            <p>网罗各大市场热门游戏软件，免费安装，极速下载，不花任何流量就能一键导入。</p>
+          <li class="ord-3"><img src="/images/yunyue/index_3.png" alt="SEO灵活配置"/>
+            <h3>SEO灵活配置</h3>
+            <p>灵活后台配置，自由设置URL,打造不一样的SEO体验</p>
           </li>
-          <li class="ord-4"><img src="/images/1389765807.png" alt="备份还原，安全放心"/>
-            <h3>备份还原，安全放心</h3>
-            <p>一键点击，轻松搞定，音乐、视频、图片备份还原一步到位。</p>
+          <li class="ord-4"><img src="/images/yunyue/index_4.png" alt="强大专题功能，自由定制"/>
+            <h3>强大专题功能，自由定制</h3>
+            <p>轻松设置小说专题合集，界面自由定制</p>
           </li>
-          <li class="ord-5"><img src="/images/1389765931.png" alt="WIFI连接，方便快捷"/>
-            <h3>WIFI连接，方便快捷</h3>
-            <p>新增WIFI连接方式，不用数据线也能轻松管理您的手机</p>
+          <li class="ord-5"><img src="/images/yunyue/index_5.png" alt="完美支持业界知名采集器"/>
+            <h3>完美支持业界知名采集器</h3>
+            <p>一键采集，自动更新，资源瞬间导入</p>
           </li>
-          <li class="ord-6"><img src="/images/1389766537.png" alt="截图功能，随时分享"/>
-            <h3>截图功能，随时分享</h3>
-            <p>随时上传分享你的手机桌面，众享魔方乐趣。</p>
+          <li class="ord-6"><img src="/images/yunyue/index_6.png" alt="原生拼音化支持"/>
+            <h3>原生拼音化支持</h3>
+            <p>专为SEO优化而生，迎合搜索引擎喜好</p>
           </li>
         </ul>
         <div class="home-bottom">
           <div class="item question">
-            <h3><span class="titl">常见问题</span><span class="more"><a href="http://bbs.mobfound.com/forum.php?mod=forumdisplay&fid=40">更多&gt;&gt;</a></span></h3>
+            <h3><span class="titl">论坛热帖</span><span class="more"><a href="http://www.yunyuewang.com/bbs">更多&gt;&gt;</a></span></h3>
             <ol>
-            	<li><a href="http://bbs.mobfound.com/forum.php?mod=forumdisplay&fid=40">为什么手机连接电脑安装驱动不动呢？</a></li>
-				<li><a href="http://bbs.mobfound.com/forum.php?mod=forumdisplay&fid=40">为什么升级软件会提示“签名不一致”？</a></li>
-				<li><a href="http://bbs.mobfound.com/forum.php?mod=forumdisplay&fid=40">手机在通过魔方备份后无法恢复？</a></li>
+            	<script type="text/javascript" src="http://www.yunyuewang.com/bbs/api.php?mod=js&bid=3"></script>
             </ol>
           </div>
           <div class="item help">
-            <h3><span class="titl">新手帮助</span><span class="more"><a href="http://bbs.mobfound.com/misc.php?mod=faq">更多&gt;&gt;</a></span></h3>
+            <h3><span class="titl">论坛新帖</span><span class="more"><a href="http://www.yunyuewang.com/bbs">更多&gt;&gt;</a></span></h3>
             <ol>
-            	<li><a href="http://bbs.mobfound.com/misc.php?mod=faq">从“魔方”下载应用到手机上，收费吗？</a></li>
-				<li><a href="http://bbs.mobfound.com/misc.php?mod=faq">“魔方“无法识别我的手机怎么办？</a></li>
-				<li><a href="http://bbs.mobfound.com/misc.php?mod=faq">能在 Windows或 Linux上安装吗？</a></li>
+            	<script type="text/javascript" src="http://www.yunyuewang.com/bbs/api.php?mod=js&bid=4"></script>
             </ol>
           </div>
           <div class="item attention">

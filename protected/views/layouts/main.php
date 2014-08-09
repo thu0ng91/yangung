@@ -9,7 +9,7 @@
     <meta content="IE=edge, chrome=1" http-equiv="X-UA-Compatible">
     <meta name="keywords" content="">
     <meta name="description" content="">
-    <link href="favicon.ico" rel="shortcut icon" />
+    <link href="/favicon.ico" rel="shortcut icon" />
     <title><?php echo CHtml::encode($this->pageTitle); ?></title>
     <!--[if lt IE 7]><script>try{ document.execCommand("BackgroundImageCache", false, true); } catch(e){};</script><![endif]-->
         <link href="<?php echo Yii::app()->baseUrl;?>/css/yunyue/reset.css" rel="stylesheet" />
@@ -49,11 +49,12 @@
             <h3>合作伙伴</h3>
             <div class="linklist">
             <ul class="clearfix">
-<?php foreach ($friendLinks as $value):?>
 <li>
-<a href="<?php echo $value->url;?>" target="_blank"><span class="img"><img border="0" alt="<?php echo $value->name;?>" src="http://mobfound.com/images/new/link-1.png" width="155" height="50"></span><span class="label"><?php echo $value->name;?></span></a>
+<a href="/"><span class="img"><img border="0" alt="云阅小说" src="/images/logo2.png" width="155" height="50"></span><span class="label">云阅小说</span></a>
 </li>
-<?php endforeach;?>
+<li>
+<a href="http://www.free55.net" target="_blank"><span class="img"><img border="0" src="http://free55.net/images/logo.png" alt="" width="155" height="50" /></span><span class="label">飞舞小说</span></a>
+</li>
 </ul>
             </div>
           </div>

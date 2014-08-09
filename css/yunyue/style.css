@@ -68,10 +68,10 @@ a:hover { text-decoration: underline; }
 .home-banner #slides .meta { position: absolute; width: 245px; height: 54px; color: white; }
 .home-banner #slides .meta p { line-height: 18px; }
 .home-banner #slides .meta p a { color: #ffba00; text-decoration: underline; }
-.home-banner #slides .ord-1 { background-image: url("/images/home-banner1.png?t=2261"); _background: none; _filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/images/new/home-banner1.png?t=2261'); }
+.home-banner #slides .ord-1 { background-image: url("/images/yunyue/home-banner1.png?t=2261"); _background: none; _filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/images/new/home-banner1.png?t=2261'); }
 .home-banner #slides .ord-1 .meta { left: 750px; top: 165px; }
-.home-banner #slides .ord-1 .bg-pos { background-image: url("/images/home-banner1-bg.png?t=2261"); width: 800px; height: 460px; position: absolute; left: -230px; top: 10px; display: none; }
-.home-banner #slides .ord-2 { background-image: url("/images/home-banner2.png?t=2261"); _background: none; _filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/images/new/home-banner2.png?t=2261'); }
+.home-banner #slides .ord-1 .bg-pos { background-image: url("/images/yunyue/home-banner1-bg.png?t=2261"); width: 800px; height: 460px; position: absolute; left: -230px; top: 10px; display: none; }
+.home-banner #slides .ord-2 { background-image: url("/images/yunyue/home-banner2.png?t=2261"); _background: none; _filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/images/new/home-banner2.png?t=2261'); }
 .home-banner #slides .ord-2 .meta { left: 50px; top: 190px; }
 .home-banner #slides .ord-3 { background-image: url("/images/home-banner3.png?t=2261"); _background: none; _filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/images/new/home-banner3.png?t=2261'); }
 .home-banner #slides .ord-3 .meta { left: 680px; top: 170px; }

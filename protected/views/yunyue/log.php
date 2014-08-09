@@ -4,20 +4,19 @@
               <li class="ord-1">
                 <div class="name">Beta版不断
 <br />迭代更新                </div>
-                <div class="time">2012-03至06</div>
+                <div class="time">2014-06至08</div>
                 <div class="fold"></div>
               </li>
               <li class="ord-2">
                 <div class="name">V1.0.0.0
 <br />发布                </div>
-                <div class="time">2012-08</div>
+                <div class="time">2014-08</div>
                 <div class="fold"></div>
               </li>
               <li class="ord-3">
-                <div class="name">V1.1.0.2
-<br />beta
-<br />发布                </div>
-                <div class="time">2013-01-07</div>
+                <div class="name">未来等你
+<br />一起完善                </div>
+                <div class="time">201*</div>
                 <div class="fold"></div>
               </li>
             </ul>

@@ -8,28 +8,8 @@
 	
 	汇款帐号信息： <br>
  	注：1.汇款金额最好加个零头，便于区别。如您的QQ号尾数为18，那您可以在汇款时多汇0.18元以示区别。<br>
-     	2.汇款后请与我们确认，通过QQ：<a href="tencent://message/?uin=5524812&amp;Site=云阅网络&amp;Menu=yes" target="blank">5524812&nbsp;&nbsp;(点击交谈)</a> 在线联系<br>
-            <!-- ul class="content">
-              <li class="ord-1">
-                <div class="name">Beta版不断
-<br />迭代更新                </div>
-                <div class="time">2012-03至06</div>
-                <div class="fold"></div>
-              </li>
-              <li class="ord-2">
-                <div class="name">V1.0.0.0
-<br />发布                </div>
-                <div class="time">2012-08</div>
-                <div class="fold"></div>
-              </li>
-              <li class="ord-3">
-                <div class="name">V1.1.0.2
-<br />beta
-<br />发布                </div>
-                <div class="time">2013-01-07</div>
-                <div class="fold"></div>
-              </li>
-            </ul-->
+     	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2.汇款后请与我们确认，通过QQ：<a href="tencent://message/?uin=5524812&amp;Site=云阅网络&amp;Menu=yes" target="blank">5524812&nbsp;&nbsp;(点击交谈)</a> 在线联系<br>
+
           </div>
           <div class="ripple"></div>
         </div>
@@ -137,7 +117,7 @@
         <tr> 
           <td height="28" class="tdbg2">&nbsp;&nbsp;程序安装指导</td>
             <td height="28" class="tdbg2"><div align="center">×</div></td>
-          <td height="28" class="tdbg2"><div align="center">×</div></td>
+          <td height="28" class="tdbg2" align=center><div class="ok">√</div></td>
           <td height="28" class="tdbg2" align=center><div class="ok">√</div></td>
           <td height="28" class="tdbg2" align=center><div class="ok">√</div></td>
         </tr>
@@ -151,14 +131,14 @@
         <tr> 
           <td height="28" class="tdbg2">&nbsp;&nbsp;程序使用指导</td>
             <td height="28" class="tdbg2"><div align="center">×</div></td>
-          <td height="28" class="tdbg2"><div align="center">×</div></td>
+          <td height="28" class="tdbg2" align=center><div class="ok">√</div></td>
           <td height="28" class="tdbg2" align=center><div class="ok">√</div></td>
           <td height="28" class="tdbg2" align=center><div class="ok">√</div></td>
         </tr>
         <tr> 
           <td height="28" class="tdbg2">&nbsp;&nbsp;程序BUG反馈解决</td>
             <td height="28" class="tdbg2"><div align="center">×</div></td>
-          <td height="28" class="tdbg2"><div align="center">×</div></td>
+          <td height="28" class="tdbg2" align=center><div class="ok">√</div></td>
           <td height="28" class="tdbg2" align=center><div class="ok">√</div></td>
           <td height="28" class="tdbg2" align=center><div class="ok">√</div></td>
         </tr>
@@ -262,7 +242,7 @@
 		<tr> 
           <td height="28" class="tdbg2">&nbsp;&nbsp;采集器新建任务</td>
           <td height="28" class="tdbg2"><div align="center">×</div></td>
-          <td height="28" class="tdbg2"> <div align="center">0</div></td>
+          <td height="28" class="tdbg2"> <div align="center">×</div></td>
 		  <td height="28" class="tdbg2"> <div align="center">3个</div></td>
 		  <td height="28" class="tdbg2"> <div align="center">6个</div></td>
         </tr>
@@ -283,7 +263,7 @@
         <tr> 
           <td height="28" class="tdbg2">&nbsp;&nbsp;免费升级期限</td>
           <td height="28" class="tdbg2"><div align="center">×</div></td>
-          <td height="28" class="tdbg2"><div align="center">终身</div></td>
+          <td height="28" class="tdbg2"><div align="center">无</div></td>
           <td class="tdbg2"><div align="center">终身</div></td>
           <td height="28" class="tdbg2"><div align="center">终身</div></td>
         </tr>
@@ -325,9 +305,6 @@
         <tr> 
           <td height="25" class="tdbg2" style="line-height:20px;padding:10px;"><strong><font color="#666666">说明3：技术支持仅限已购买商业授权网站（不包括任何第三方产品）。</font></strong></td>
         </tr>
-        <tr>
-          <td height="15" class="tdbg2" style="line-height:20px;padding:10px;"><strong><font color="#666666">本页价格政策从2014年8月15日起执行。</font></strong></td>
-        </tr>
       </table>
 <script>
 function turnit(ss)
@@ -350,6 +327,6 @@ font-weight: bold;
 .tdbg{background:#f2f5f9;line-height:30px;height:30px;border:1px #ccc solid;padding:5px;}
 .tdbg2{background:#fff;border:1px #ccc solid;height:25px;line-height: 25px;}
 .tdbg3{background:#F2F5F9;}
-.wp a{color:#fff;}
+.wp a{color:#ef2;}
 .wp a:hover{color:#ff7d77;}
 </style>
