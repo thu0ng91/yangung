@@ -7,8 +7,8 @@
     <!--[if lt IE 7]><html class="ie6"><![endif]-->
     <meta charset="UTF-8">
     <meta content="IE=edge, chrome=1" http-equiv="X-UA-Compatible">
-    <meta name="keywords" content="">
-    <meta name="description" content="">
+    <meta name="keywords" content="云阅小说系统,小说系统,php小说,免费小说系统">
+    <meta name="description" content="云阅网倾力打造，我们是小说系统专家，具有多年开发经验，按照站长实际需求快速更新迭代">
     <link href="/favicon.ico" rel="shortcut icon" />
     <title><?php echo CHtml::encode($this->pageTitle); ?></title>
     <!--[if lt IE 7]><script>try{ document.execCommand("BackgroundImageCache", false, true); } catch(e){};</script><![endif]-->

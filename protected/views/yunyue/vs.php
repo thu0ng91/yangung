@@ -18,10 +18,10 @@
 <table style="width:980px;margin:0 auto;background:#B6D0F4;padding:10px;margin-top:10px;" border="0" cellpadding="2" cellspacing="2">
         <tr style="line-height:30px;height:30px;"> 
           <td width="20%" height="28" class="tdbg"><font color="#333333"><strong>&nbsp;&nbsp;商业授权版本类型</strong></font></td>
-          <td width="20%" height="28" class="tdbg"> <div align="center"><font color="#333333"><strong>免费版</strong></font></div></td>
-          <td width="20%" height="28" class="tdbg"> <div align="center"><font color="#333333"><strong>基础版</strong></font></div></td>
-          <td width="20%" class="tdbg"> <div align="center"><font color="#333333"><strong>白金版</strong></font></div></td>
-          <td width="20%" height="28" class="tdbg"> <div align="center"><font color="#333333"><strong>钻石版</strong></font></div></td>
+          <td width="20%" height="28" class="tdbg"> <div align="center"><font color="#333333"><strong>永久免费版</strong></font></div></td>
+          <td width="20%" height="28" class="tdbg"> <div align="center"><font color="#333333"><strong>基础服务版</strong></font></div></td>
+          <td width="20%" class="tdbg"> <div align="center"><font color="#333333"><strong>白金服务版</strong></font></div></td>
+          <td width="20%" height="28" class="tdbg"> <div align="center"><font color="#333333"><strong>钻石服务版</strong></font></div></td>
         </tr>
         <tr> 
           <td height="28" class="tdbg2">&nbsp;&nbsp;授权与服务价格(人民币)</td>

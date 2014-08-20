@@ -44,7 +44,7 @@ class Version extends CActiveRecord
 			array('posttime', 'length', 'max'=>11),
 			// The following rule is used by search().
 			// Please remove those attributes that should not be searched.
-			array('id, title, version_number, price, posttime', 'safe', 'on'=>'search'),
+			array('id, title, version_number, price, posttime,updatelog', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -70,6 +70,7 @@ class Version extends CActiveRecord
 			'version_number' => 'Version Number',
 			'price' => 'Price',
 			'posttime' => 'Posttime',
+			'updatelog' => 'updatelog',
 		);
 	}
 
@@ -89,6 +90,7 @@ class Version extends CActiveRecord
 		$criteria->compare('version_number',$this->version_number,true);
 		$criteria->compare('price',$this->price,true);
 		$criteria->compare('posttime',$this->posttime,true);
+		$criteria->compare('updatelog',$this->updatelog,true);
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,
