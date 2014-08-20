@@ -7,14 +7,26 @@
     <!--[if lt IE 7]><html class="ie6"><![endif]-->
     <meta charset="UTF-8">
     <meta content="IE=edge, chrome=1" http-equiv="X-UA-Compatible">
+    <meta name="baidu-site-verification" content="gWdJDRbShF" />
     <meta name="keywords" content="云阅小说系统,小说系统,php小说,免费小说系统">
     <meta name="description" content="云阅网倾力打造，我们是小说系统专家，具有多年开发经验，按照站长实际需求快速更新迭代">
+
     <link href="/favicon.ico" rel="shortcut icon" />
     <title><?php echo CHtml::encode($this->pageTitle); ?></title>
     <!--[if lt IE 7]><script>try{ document.execCommand("BackgroundImageCache", false, true); } catch(e){};</script><![endif]-->
         <link href="<?php echo Yii::app()->baseUrl;?>/css/yunyue/reset.css" rel="stylesheet" />
         <link href="<?php echo Yii::app()->baseUrl;?>/css/yunyue/style.css" rel="stylesheet" />
         <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/yacms/css/index.css" />
+  	<script>
+	var _hmt = _hmt || [];
+	(function() {
+	  var hm = document.createElement("script");
+	  hm.src = "//hm.baidu.com/hm.js?16f765ff9cec649f99eb18c2f4a8dfaa";
+	  var s = document.getElementsByTagName("script")[0]; 
+	  s.parentNode.insertBefore(hm, s);
+	})();
+	</script>
+  	
   </head>
   <body>
     <div class="container">
@@ -51,9 +63,6 @@
             <ul class="clearfix">
 <li>
 <a href="/"><span class="img"><img border="0" alt="云阅小说" src="/images/logo2.png" width="155" height="50"></span><span class="label">云阅小说</span></a>
-</li>
-<li>
-<a href="http://www.free55.net" target="_blank"><span class="img"><img border="0" src="http://free55.net/images/logo.png" alt="" width="155" height="50" /></span><span class="label">飞舞小说</span></a>
 </li>
 </ul>
             </div>
